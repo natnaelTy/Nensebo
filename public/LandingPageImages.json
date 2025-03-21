@@ -1,0 +1,23 @@
+
+[
+    {
+        "id": 0,
+        "images" : "./images/farm.jpg"
+    },
+    {
+        "id": 1,
+        "images" : "./images/site3.jpg"
+    },
+    {
+        "id": 2,
+        "images" : "./images/site7.jpg"
+    },
+    {
+        "id": 3,
+        "images" : "./images/homepic.jpg"
+    },
+    {
+        "id": 4,
+        "images" : "./images/second-pic.jpg"
+    }
+]
