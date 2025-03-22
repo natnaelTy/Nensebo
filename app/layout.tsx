@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono, Open_Sans, Nunito } from "next/font/google";
 import "./globals.css";
-import HomePage from "../app/components/homepage/HomePage";
+import HomePage from "./homepage/page";
+import NavBar from "./components/navbar/NavBar";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -39,9 +40,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={opensans.className}
-      >
-        <HomePage/>
+        className={opensans.className}>
+  
+        <NavBar/>
         {children}
       </body>
     </html>
