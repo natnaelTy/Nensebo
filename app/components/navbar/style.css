@@ -1,0 +1,28 @@
+/* Nav Bar */
+.navbar{
+    background-color: transparent;
+    height: 90px;
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    padding: 8px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    width: 100%;
+}
+/* nav drop down */
+.navbar.active{
+    background-color: #ffffff;
+    color: #000000;
+    position: fixed;
+    transition: all 0.6s ease;
+}
+
+ul li a:hover{
+  border-bottom: 2px solid rgb(30, 97, 30);
+  transition: all 0.8s ease;
+}
+
+
