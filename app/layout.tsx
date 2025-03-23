@@ -1,11 +1,10 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Open_Sans, Nunito } from "next/font/google";
+import { Geist, Geist_Mono, Open_Sans, Nunito, Montserrat } from "next/font/google";
 import "./globals.css";
-import HomePage from "./homepage/page";
 import NavBar from "./components/navbar/NavBar";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const montserrat = Montserrat({
+  variable: "--font-montserrat-sans",
   subsets: ["latin"],
 });
 
@@ -40,7 +39,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={opensans.className}>
+        className={montserrat.className}>
   
         <NavBar/>
         {children}
