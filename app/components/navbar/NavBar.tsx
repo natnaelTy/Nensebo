@@ -39,6 +39,7 @@ function NavBar(){
              <Link href={'/about'}><li className="hover:text-green-700">About</li></Link>
              <Link href={'/ordering-info'}><li className="hover:text-green-700">Info (FQA)</li></Link>
              <Link href={'/contact'}><li className="hover:text-green-700">Contact</li></Link>
+             <Link href={'/contact'}><li className="hover:text-green-700">Contact</li></Link>
             </>
         )
     }
@@ -65,19 +66,21 @@ function NavBar(){
         <div>
             <nav className={ navbar ? 'navbar active' : 'navbar'}>
               <Link href={'/'}>
-                <div className="flex items-center justify-center gap-1">
+                <div className="flex items-center justify-start gap-1 w-[550px]">
                     <div className="logo relative w-[65px] p-2 h-[65px]">
                        <img src="./images/coffeelogo.png" alt=""  className="w-full object-cover text-black"/>
                      </div>
-                     <h1 className="text-sm md:text-xl">Nensebo.</h1>
+                     <h1 className="text-sm md:text-2xl">Nensebo.</h1>
                 </div>
                 </Link>
                   
-                 <ul className="hidden md:flex gap-5 text-sm">
+                 <ul className="hidden lg:flex justify-end gap-8 font-base text-md w-[500px]">
                       <NavLinks/>
                  </ul>
+
+                 {/* hamburger menu */}
                  {
-                    <button className="md:hidden p-3" style={{fontSize: '30px'}} onClick={hanldeShowMenu}>{showMenu ? <div><LiaTimesSolid/></div>  : <div><HiMenuAlt3/></div>}</button>
+                    <button className="lg:hidden p-2 absolute top-5 right-2" style={{fontSize: '30px'}} onClick={hanldeShowMenu}>{showMenu ? <div><LiaTimesSolid/></div>  : <div><HiMenuAlt3/></div>}</button>
                  }  
             </nav>
               <AnimatePresence>
