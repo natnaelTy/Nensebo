@@ -18,6 +18,7 @@
     color: #000000;
     position: fixed;
     transition: all 0.6s ease;
+    box-shadow:  #00000013 5px 5px 15px 5px;
 }
 
 ul li a:hover{
