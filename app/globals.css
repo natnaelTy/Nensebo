@@ -24,3 +24,21 @@ body {
   color: var(--foreground);
   overflow-x: hidden;
 }
+
+/* reuseble class */
+
+@layer utilities {
+  /* what we offer component*/
+  .WhatWeOfferCard {
+    @apply flex flex-col items-center justify-center shadow-md hover:shadow-2xl rounded-xl w-[370px] gap-4 m-auto overflow-hidden;
+  }
+  .WhatWeOfferCardImage {
+    @apply object-cover w-full rounded-t-xl h-64 transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110;
+  }
+  .WhatWeOfferTitle {
+    @apply text-2xl lg:text-3xl font-medium text-green-800;
+  }
+  .WhatWeOfferDescription {
+    @apply text-sm md:text-base text-gray-800 p-6;
+  }
+}
