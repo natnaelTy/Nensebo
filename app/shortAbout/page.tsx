@@ -20,7 +20,7 @@ function ShortAbout() {
             className="max-w-lg"
           >
             <img
-              src="./images/coffee farm.png"
+              src="./images/coffee-farm.png"
               alt=""
               className="w-full h-full object-cover"
             />
