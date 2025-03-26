@@ -21,7 +21,7 @@ const data = <DataType[]>[
   {
     id: 2, 
     title: "Washed",
-    description: "During, processing the skin of the fresh cherry is physically removed using a pulp machine and water. The coffee is then fermented under water for 24-36 hours, depending on the weather conditions. During the process sugar coating or mucilage around the parchment is removed during the fermentation process. Once fermentation is completed the parchment is thoroughly washed. It’s then graded in washing channels in to two grades based on density, and then soaked under clean spring water in tanks for 12-24 hours to remove all traces of fermented mucilage. Washed coffees tend to have a pronounced acidity and a delicate, complex flavor profile.",
+    description: "During, processing the skin of the fresh cherry is physically removed using a pulp machine and water. The coffee is then fermented under water for 24-36 hours, depending on the weather conditions. During the process sugar coating or mucilage around the parchment is removed during the fermentation process. Once fermentation is completed the parchment is thoroughly washed. It’s then graded in washing channels in to two grades based on density, and then soaked under clean spring water in tanks for 12-24 hours to remove all traces of fermented mucilage.",
     imageUrl: "./images/washed1.jpg"
   },
 ];
