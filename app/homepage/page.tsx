@@ -40,21 +40,21 @@ export default function Home() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 1.5 }}
             viewport={{ once: true }}
-            className="flex flex-col items-center md:items-start justify-center p-3 gap-3 text-center md:text-left"
+            className="flex flex-col items-center md:items-start justify-center p-3 gap-4 text-center md:text-left"
           >
             <h1 className="max-w-xl text-4xl text-white font-bold uppercase md:text-5xl z-10">
-              Nensebo <span className="text-green-700 font-extrabold">coffee </span>
+              Sidama Nensebo <span className="text-green-700 font-extrabold">Coffee </span>
               Supply
             </h1>
-            <h2 className={`${nunitoSans.className}text-xl text-white font-semibold z-10 md:text-2xl`}>
+            <h2 className={`${nunitoSans.className}text-2xl text-white font-semibold z-10 md:text-3xl`}>
               Speciality coffee from the land of origin.
             </h2>
-            <p className="text-white text-sm md:text-md mt-3 z-10 max-w-xl">
+            <p className="text-white text-md mt-3 z-10 max-w-xl">
               We source premium coffee beans directly from our farm in
               Ethiopia’s coffee-producing regions, focusing on global
               distribution.
             </p>
-            <button className="bg-transparent text-white font-bold border-2 border-white px-4 py-3 text-sm rounded-lg uppercase mt-8 hover:bg-white hover:text-black z-10">
+            <button className="bg-transparent text-white font-bold border-2 border-white px-4 py-3 text-sm rounded-lg uppercase mt-8 hover:bg-white hover:text-black z-10 transition duration-300 ease-in">
               <Link href="/contact">Contact Us</Link>
             </button>
           </motion.div>
