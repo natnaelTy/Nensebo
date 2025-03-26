@@ -29,16 +29,31 @@ body {
 
 @layer utilities {
   /* what we offer component*/
-  .WhatWeOfferCard {
-    @apply flex flex-col items-center justify-center shadow-md hover:shadow-2xl rounded-xl w-[370px] gap-4 m-auto overflow-hidden;
-  }
-  .WhatWeOfferCardImage {
-    @apply object-cover w-full rounded-t-xl h-64 transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110;
-  }
-  .WhatWeOfferTitle {
-    @apply text-2xl lg:text-3xl font-medium text-green-800;
-  }
-  .WhatWeOfferDescription {
-    @apply text-sm md:text-base text-gray-800 p-6;
-  }
+.WhatWeOfferCard {
+  @apply flex flex-col items-center justify-between shadow-xl hover:shadow-2xl rounded-xl w-[370px] h-[700px] gap-4 m-auto overflow-hidden;
+}
+
+.WhatWeOfferCardImage {
+  @apply object-cover w-full rounded-t-xl h-64 transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110;
+}
+
+.WhatWeOfferTitle {
+  @apply text-2xl lg:text-3xl font-medium text-green-800;
+}
+
+.WhatWeOfferDescription {
+  @apply text-sm md:text-base text-gray-800 p-6 flex-grow;
+}
+
+.underlineForTitle::before{
+    content: '';
+    width: 40px;
+    height: 3px;
+    background-color: rgb(22, 140, 22);
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 6px;
+}
+
 }
