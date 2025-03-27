@@ -42,7 +42,7 @@ export default function Home() {
             viewport={{ once: true }}
             className="flex flex-col items-center md:items-start justify-center p-3 gap-4 text-center md:text-left"
           >
-            <h1 className="max-w-xl text-4xl text-white font-bold uppercase md:text-5xl z-10">
+            <h1 className="max-w-xl text-4xl text-white font-bold md:text-6xl z-10">
               Sidama Nensebo <span className="text-green-700 font-extrabold">Coffee </span>
               Supply
             </h1>
