@@ -6,10 +6,8 @@ export default function WhatWeOffer() {
 
   return (
     <>
-      <div className="mb-20 relative">
-        <div className="max-w-xs h-auto absolute top-0 right-16 opacity-20 z-[-1] transalte origin-bottom -rotate-32">
-           <img src="./images/coffeeplant.png" alt="" className="w-full h-full object-cover"/>
-        </div>
+      <div className="mb-20 p-1 lg:p-16 bg-gray-100">
+       
         <motion.div
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -17,7 +15,7 @@ export default function WhatWeOffer() {
           viewport={{ once: true }}
           className="relative"
         >
-          <h1 className="text-center text-xl sm:text-2xl lg:text-3xl font-normal mt-16">
+          <h1 className="text-center text-2xl sm:text-2xl lg:text-4xl font-semibold mt-16">
             What we offer
           </h1>
           <div className="underlineForTitle"></div>
