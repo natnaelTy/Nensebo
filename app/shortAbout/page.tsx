@@ -21,7 +21,7 @@ function ShortAbout() {
           >
             <img
               src="./images/coffee-farm.png"
-              alt=""
+              alt=""  
               className="w-full h-full object-cover"
             />
           </motion.div>
@@ -33,11 +33,11 @@ function ShortAbout() {
             viewport={{ once: true }}
             className="paragraph flex flex-col items-start justify-center gap-5"
           >
-            <p className="text-sm md:text-lg font-semibold text-green-700 bg-green-100 px-6 py-2 rounded-full">
+            <p className="aboutCompanyP">
               About Company
             </p>
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold max-w-xl">
-              Mastering Nurture In <span className="undeline">Coffee</span>{" "}
+              Mastering Nurture In Coffee
               Production
             </h1>
             <p className="max-w-xl text-gray-700 text-md">
@@ -49,26 +49,26 @@ function ShortAbout() {
               Region.
             </p>
 
-            <div className="flex items-start flex-col md:flex-row gap-8 justify-between w-full mb-5">
-              <div className="flex flex-col items-start">
-                <PiCoffeeBeanLight className="text-green-800 text-5xl mb-2 bg-green-100 rounded-full p-2" />
-                <h1 className="text-lg md:text-xl font-bold max-w-xs">
+            <div className="flex items-start flex-wrap gap-8 justify-between w-full mb-5">
+              <div className="aboutUsCard">
+                <PiCoffeeBeanLight className="aboutUsIcon" />
+                <h1 className="aboutUsH1Tag">
                   Premium Coffee <br />
                   Beans
                 </h1>
               </div>
 
-              <div className="flex flex-col items-start">
-                <LiaShipSolid className="text-green-800 text-5xl mb-2 bg-green-100 rounded-full p-2" />
-                <h1 className="text-lg md:text-xl font-bold max-w-xs">
+              <div className="aboutUsCard">
+                <LiaShipSolid className="aboutUsIcon" />
+                <h1 className="aboutUsH1Tag">
                   Reliable Export <br />
                   Solutions
                 </h1>
               </div>
 
-              <div className="flex flex-col items-start">
-                <GiEarthAmerica className="text-green-800 text-5xl mb-2 bg-green-100 rounded-full p-2" />
-                <h1 className="text-lg md:text-xl font-bold max-w-xs">
+              <div className="aboutUsCard">
+                <GiEarthAmerica className="aboutUsIcon" />
+                <h1 className="aboutUsH1Tag">
                   Global <br />
                   Partnerships
                 </h1>
@@ -76,14 +76,14 @@ function ShortAbout() {
             </div>
 
             <div className="flex items-center justify-between md:justify-around gap-5 md:gap-8 ">
-              <button className="px-4 font-semibold py-3 bg-green-800 text-white rounded-md hover:bg-green-600 transition duration-300 ease-in">
+              <button className="learnMoreBtn">
                 <Link href={"/aboutUs"}>Learn More</Link>
               </button>
               <div className="flex items-center justify-center gap-3">
-                  <PiPhoneIncomingThin className="text-5xl text-green-800 bg-green-100 rounded-full p-2"/>
-                  <div className="flex flex-col items-start">
-                      <p className="text-gray-500 text-lg font-medium">Phone : </p>
-                      <h2 className="text-xl md:text-2xl font-bold">+251 975329588</h2>
+                  <PiPhoneIncomingThin className="aboutUsIcon"/>
+                  <div className="aboutUsCard">
+                      <p className="text-gray-500 text-sm md:text-base font-medium">Phone : </p>
+                      <h2 className="text-base md:text-xl font-bold">+251 911828573</h2>
                   </div>
               </div>
             </div>
