@@ -7,7 +7,6 @@ export default function WhatWeOffer() {
   return (
     <>
       <div className="mb-20 p-1 lg:p-16 bg-gray-100">
-       
         <motion.div
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
