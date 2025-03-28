@@ -46,7 +46,7 @@ body {
   }
   /* why choose us */
   .whyChooseUsContainer {
-    @apply flex items-center justify-around flex-col lg:flex-row w-full p-4 gap-10;
+    @apply flex items-center justify-around flex-col lg:flex-row w-full p-4 md:p-6 lg:p-16 gap-10;
   }
   .whyChooseUsCard {
     @apply flex flex-col items-center justify-center text-center gap-4 bg-[#000000b7] max-w-[350px] h-[260px] md:h-[350px] w-full rounded-xl;
@@ -58,9 +58,18 @@ body {
     @apply max-w-xs text-gray-200 text-base;
   }
   .whyChooseUsTitle {
-    @apply absolute top-20 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-3xl md:text-4xl lg:text-5xl font-semibold text-center;
+    @apply absolute top-28 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-3xl md:text-4xl lg:text-5xl font-semibold text-center;
   }
-
+  /* about detail */
+  .h3Title {
+    @apply text-xl md:text-2xl lg:text-3xl font-medium;
+  }
+  .aboutDescription {
+    @apply text-gray-700 text-gray-600 md:text-base;
+  }
+  .aboutSpan {
+    @apply font-semibold text-lg md:text-xl text-slate-800;
+  }
   /* what we offer component*/
 .WhatWeOfferCard {
   @apply flex flex-col items-center justify-between shadow-xl hover:shadow-2xl rounded-xl w-[370px] h-[700px] gap-4 m-auto overflow-hidden bg-white;
@@ -100,7 +109,7 @@ body {
   @apply flex items-start justify-center flex-col;
 }
 .footerHeaderText {
-  @apply text-xl md:text-2xl font-semibold mb-4;
+  @apply text-xl md:text-2xl font-semibold mb-5;
 }
 .unorderList {
   @apply flex flex-col gap-5 items-start;
