@@ -17,7 +17,7 @@ function WhyChooseUs() {
             Why Choose Us?
           </h1>
 
-        <div className="absolute top-50 w-full">
+        <div className="absolute top-38 w-full">
           <div className="whyChooseUsContainer">
             <div className="whyChooseUsCard">
               <PiCertificate className="text-8xl md:text-9xl text-white bg-yellow-500 rounded-full p-5" />
