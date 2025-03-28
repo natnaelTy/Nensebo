@@ -40,16 +40,14 @@ export default function Home() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 1.5 }}
             viewport={{ once: true }}
-            className="flex flex-col items-center md:items-start justify-center p-3 gap-4 text-center md:text-left"
+            className="flex flex-col items-center md:items-start justify-center p-3 gap-2 text-center md:text-left"
           >
             <h1 className="max-w-xl text-4xl text-white font-bold md:text-6xl z-10">
-              Sidama Nensebo <span className="text-green-700 font-extrabold">Coffee </span>
-              Supply
+              Direct From Farm, <span className="text-green-700 font-extrabold">Pure </span>
+             In Flavor
             </h1>
-            <h2 className={`${nunitoSans.className}text-2xl text-white font-semibold z-10 md:text-3xl`}>
-              Speciality coffee from the land of origin.
-            </h2>
-            <p className="text-white text-md mt-3 z-10 max-w-xl">
+
+            <p className="text-white text-md z-10 max-w-xl">
               We source premium coffee beans directly from our farm in
               Ethiopia’s coffee-producing regions, focusing on global
               distribution.
