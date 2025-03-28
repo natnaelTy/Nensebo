@@ -70,7 +70,7 @@ function NavBar(){
                     <div className="logo relative w-[65px] p-2 h-[65px]">
                        <img src="./images/coffeelogo.png" alt=""  className="w-full object-cover text-black"/>
                      </div>
-                     <h1 className="text-sm md:text-2xl">Nensebo.</h1>
+                     <h1 className="text-sm md:text-2xl font-semibold">Sidama Nensebo</h1>
                 </div>
                 </Link>
                   
