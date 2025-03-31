@@ -2,7 +2,7 @@
 .navbar{
     background-color: transparent;
     height: 90px;
-    z-index: 999;
+    z-index: 1;
     position: fixed;
     top: 0;
     padding: 8px 15px;
