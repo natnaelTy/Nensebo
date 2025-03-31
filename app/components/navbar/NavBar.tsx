@@ -38,7 +38,7 @@ function NavBar(){
              <Link href={'/'}><li className="hover:text-green-700">Home</li></Link>
              <Link href={'/about'}><li className="hover:text-green-700">About</li></Link>
              <Link href={'/ordering-info'}><li className="hover:text-green-700">Info (FQA)</li></Link>
-             <Link href={'/contact'}><li className="hover:text-green-700">Contact</li></Link>
+             <Link href={'/gallary'}><li className="hover:text-green-700">Gallary</li></Link>
              <Link href={'/contact'}><li className="hover:text-green-700">Contact</li></Link>
             </>
         )
@@ -89,7 +89,7 @@ function NavBar(){
                                 initial="initial"
                                 animate="animate"
                                 exit="exit"
-                                className="navDropDown md:hidden origin-top flex basis-full items-start justify-between w-full top-0 bg-[#1c1c1c] text-white z-20 fixed gap-15 p-10 ">
+                                className="navDropDown md:hidden origin-top flex basis-full items-start justify-between w-full top-0 bg-white z-20 fixed gap-15 p-10 ">
                            <ul onClick={hanldeShowMenu} className="flex flex-col items-start justify-start gap-10 mt-8">
                              <NavLinks/>
                           </ul>         
