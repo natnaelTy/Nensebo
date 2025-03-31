@@ -117,6 +117,34 @@ body {
 .footerContactCard {
   @apply flex gap-4 items-center justify-start;
 }
+
+/* gallary component */
+.arrow {
+  @apply absolute text-white top-[48%] bg-[#000000c6] hover:bg-[#000000e0] p-5 cursor-pointer rounded-full text-2xl;
+}
+.arrowLeft {
+  @apply left-5;
+}
+.arrowRight {
+  @apply right-5;
+}
+.circle-indicator {
+  @apply absolute bottom-8 flex gap-4;
+}
+.current-indicator {
+  @apply bg-white w-[30px] rounded-full border-none transition duration-300 ease-in;
+}
+.hide-indicator {
+  @apply bg-slate-400 w-[7px] lg:w-[8px] h-[7px] lg:h-[8px]
+}
+
+/* benner component */
+.bannerContainer {
+  @apply absolute top-42 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10;
+}
+.nestedBannerContainer {
+  @apply flex items-center justify-around text-white text-lg lg:text-xl font-semibold gap-2;
+}
 .underlineForTitle::before{
     content: '';
     width: 40px;
