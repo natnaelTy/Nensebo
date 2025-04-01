@@ -3,13 +3,7 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import "./index.css";
-import { Nunito } from "next/font/google";
-import image from "./ImagesData";
-
-export const nunitoSans = Nunito({
-  variable: "--font-nunito-mono",
-  subsets: ["latin"],
-})
+import data from "./ImagesData";
 
 export default function Home() {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -18,10 +12,10 @@ export default function Home() {
   // Auto-slide functionality
   useEffect(() => {
     const interval = setInterval(() => {
-      setCurrentSlide((prev) => (prev === image.length - 1 ? 0 : prev + 1));
+      setCurrentSlide((prev) => (prev === data.length - 1 ? 0 : prev + 1));
     }, 4000);
     return () => clearInterval(interval);
-  }, [image.length]);
+  }, []);
 
 
 
@@ -55,12 +49,12 @@ export default function Home() {
          max-w-xs md:max-w-sm w-full h-auto z-10">
             <img src="/images/banner_coffee_bag.png" alt="" className="object-cover w-full h-full" />
           </div>
-          {image.length > 0 &&
-            image.map((img, index) => (
+          {data.length > 0 &&
+            data.map((img, index) => (
               <img
                 key={index}
-                src={img.images}
-                alt={`Slide ${index + 1}`}
+                src={img.imageUrl}
+                alt="image"
                 className={`showCurrentSlide ${
                   currentSlide === index ? "" : "hide"
                 }`}
