@@ -24,7 +24,7 @@ function OurSites(){
                        <h1 className="siteName">01. Mendoyu</h1>
                        <p className="siteDescription">This site located about 2400 altitude at one of the tropical regions in oromia region.</p>
                     </div>
-                    <img src="./images/tade-7.jpg" alt="" className="siteImage"/>
+                    <img src="./images/tade-7.jpg" alt="image" className="siteImage"/>
                 </div>
 
                 <div className="imageContainer">
@@ -32,7 +32,7 @@ function OurSites(){
                        <h1 className="siteName">02. Yemasera</h1>
                        <p className="siteDescription">This site one of our largest site with the size of over 100 workers.</p>
                     </div>
-                    <img src="./images/site2.jpg" alt="" className="siteImage"/>
+                    <img src="./images/site2.jpg" alt="image" className="siteImage"/>
                 </div>
 
                 <div className="imageContainer">
@@ -40,7 +40,7 @@ function OurSites(){
                        <h1 className="siteName">03. Uchuro </h1>
                        <p className="siteDescription">This site planted at the remote area of oromia region with abundant coffee resources.</p>
                     </div>
-                    <img src="./images/site4.jpg" alt="" className="siteImage"/>
+                    <img src="./images/site4.jpg" alt="image" className="siteImage"/>
                 </div>
 
                 <div className="imageContainer">
@@ -48,7 +48,7 @@ function OurSites(){
                        <h1 className="siteName">04. Mewa Amrieha</h1>
                        <p className="siteDescription">This site dedicated to improve the quality of our coffee.</p>
                     </div>
-                    <img src="./images/site5.jpg" alt="" className="siteImage"/>
+                    <img src="./images/site5.jpg" alt="image" className="siteImage"/>
                 </div>
 
             </motion.div>
