@@ -1,30 +1,30 @@
 interface ImageDataType{
     id: number,
-    images: string
+    imageUrl: string
 }
 
 
-const image = <ImageDataType[]> [
+const data = <ImageDataType[]> [
     {
         id: 0,
-        images : "./images/farm.jpg"
+        imageUrl : "./images/farm.jpg"
     },
     {
         id: 1,
-        images : "./images/site3.jpg"
+        imageUrl : "./images/site3.jpg"
     },
     {
         id: 2,
-        images : "./images/site7.jpg"
+        imageUrl : "./images/site7.jpg"
     },
     {
         id: 3,
-        images : "./images/homepic.jpg"
+        imageUrl : "./images/homepic.jpg"
     },
     {
         id: 4,
-        images : "./images/second-pic.jpg"
+        imageUrl : "./images/second-pic.jpg"
     }
 ]
 
-export default image;
+export default data;
