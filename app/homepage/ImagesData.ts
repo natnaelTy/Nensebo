@@ -1,11 +1,10 @@
-export interface ImageType{
+interface ImageDataType{
     id: number,
     images: string
 }
 
 
-const image = <ImageType[]>
-[
+const image = <ImageDataType[]> [
     {
         id: 0,
         images : "./images/farm.jpg"
