@@ -1,7 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
 import Link from "next/link";
-import Image from "next/image";
 import { LiaShipSolid } from "react-icons/lia";
 import { PiCoffeeBeanLight } from "react-icons/pi";
 import { GiEarthAmerica } from "react-icons/gi";
