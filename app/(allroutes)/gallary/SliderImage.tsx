@@ -2,15 +2,22 @@ import { MdOutlineArrowForwardIos } from "react-icons/md";
 import { MdOutlineArrowBackIosNew } from "react-icons/md";
 import images from "./Image";
 import { LiaTimesSolid } from "react-icons/lia";
-import { useSwipeable } from "react-swipeable";
 import { useEffect } from "react";
 
-function SliderImage({
+
+ interface SlideImageProps {
+  currentSlide: number,
+  setCurrentSlide: (index: number) => void,
+  toggleShowImage: boolean,
+  showFullImage: () => void
+}
+
+const SliderImage: React.FC<SlideImageProps> = ({
   currentSlide,
   setCurrentSlide,
   toggleShowImage,
   showFullImage,
-}: any) {
+}) => {
   function handlePrevious() {
     setCurrentSlide(currentSlide === 0 ? images.length - 1 : currentSlide - 1);
   }

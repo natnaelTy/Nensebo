@@ -6,6 +6,7 @@ import Link from "next/link";
 import { RiArrowRightDoubleFill } from "react-icons/ri";
 
 
+
 function Gallary() {
 
     const [currentSlide, setCurrentSlide] = useState(0);
@@ -57,7 +58,7 @@ function Gallary() {
           ))}
       </div>
       
-      <SliderImage setCurrentSlide={setCurrentSlide} currentSlide={currentSlide} toggleShowImage={toggleShowImage} setToggleShowImage={setToggleShowImage} showFullImage={showFullImage}/>
+      <SliderImage setCurrentSlide={setCurrentSlide} currentSlide={currentSlide} toggleShowImage={toggleShowImage}  showFullImage={showFullImage}/>
     </>
   );
 }
