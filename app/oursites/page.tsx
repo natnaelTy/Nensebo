@@ -9,7 +9,7 @@ function OurSites(){
                 <img src="./images/coffeeplant.png" alt="" className="w-full h-full object-cover"/>
             </div>
             {/* description */}
-            <h1 className="text-2xl md:text-3xl lg:text-4xl font-semibold text-center">Our site's</h1>
+            <h1 className="text-2xl md:text-3xl lg:text-4xl font-semibold text-center">{`Our site's`}</h1>
             {/* description underline */}
             <div className="underlineForTitle"></div>
             
@@ -21,23 +21,23 @@ function OurSites(){
                         className="flex items-center justify-around flex-wrap gap-20 mt-14">
                 <div className="imageContainer">
                     <div className="contentContainer">
-                       <h1 className="siteName">01.&apos; Mendoyu</h1>
-                       <p className="siteDescription">This site located about 2400&apos; altitude at one of the tropical regions in oromia region.</p>
+                       <h1 className="siteName">{`01.`} Mendoyu</h1>
+                       <p className="siteDescription">This site located about {`2400`} altitude at one of the tropical regions in oromia region.</p>
                     </div>
                     <img src="./images/tade-7.jpg" alt="image" className="siteImage"/>
                 </div>
 
                 <div className="imageContainer">
                     <div className="contentContainer">
-                       <h1 className="siteName">02.&apos; Yemasera</h1>
-                       <p className="siteDescription">This site one of our largest site with the size of over 100&apos; workers.</p>
+                       <h1 className="siteName">{`02.`} Yemasera</h1>
+                       <p className="siteDescription">This site one of our largest site with the size of over {`100`}; workers.</p>
                     </div>
                     <img src="./images/site2.jpg" alt="image" className="siteImage"/>
                 </div>
 
                 <div className="imageContainer">
                     <div className="contentContainer">
-                       <h1 className="siteName">03.&apos; Uchuro </h1>
+                       <h1 className="siteName">{`03.`} Uchuro </h1>
                        <p className="siteDescription">This site planted at the remote area of oromia region with abundant coffee resources.</p>
                     </div>
                     <img src="./images/site4.jpg" alt="image" className="siteImage"/>
@@ -45,7 +45,7 @@ function OurSites(){
 
                 <div className="imageContainer">
                     <div className="contentContainer">
-                       <h1 className="siteName">04.&apos; Mewa Amrieha</h1>
+                       <h1 className="siteName">{`04.`} Mewa Amrieha</h1>
                        <p className="siteDescription">This site dedicated to improve the quality of our coffee.</p>
                     </div>
                     <img src="./images/site5.jpg" alt="image" className="siteImage"/>
