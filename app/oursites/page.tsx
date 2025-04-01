@@ -21,7 +21,7 @@ function OurSites(){
                         className="flex items-center justify-around flex-wrap gap-20 mt-14">
                 <div className="imageContainer">
                     <div className="contentContainer">
-                       <h1 className="siteName">01. Mendoyu</h1>
+                       <h1 className="siteName">01.&quot; Mendoyu</h1>
                        <p className="siteDescription">This site located about 2400 altitude at one of the tropical regions in oromia region.</p>
                     </div>
                     <img src="./images/tade-7.jpg" alt="image" className="siteImage"/>
@@ -29,7 +29,7 @@ function OurSites(){
 
                 <div className="imageContainer">
                     <div className="contentContainer">
-                       <h1 className="siteName">02. Yemasera</h1>
+                       <h1 className="siteName">02.&quot; Yemasera</h1>
                        <p className="siteDescription">This site one of our largest site with the size of over 100 workers.</p>
                     </div>
                     <img src="./images/site2.jpg" alt="image" className="siteImage"/>
@@ -37,7 +37,7 @@ function OurSites(){
 
                 <div className="imageContainer">
                     <div className="contentContainer">
-                       <h1 className="siteName">03. Uchuro </h1>
+                       <h1 className="siteName">03.&quot; Uchuro </h1>
                        <p className="siteDescription">This site planted at the remote area of oromia region with abundant coffee resources.</p>
                     </div>
                     <img src="./images/site4.jpg" alt="image" className="siteImage"/>
@@ -45,7 +45,7 @@ function OurSites(){
 
                 <div className="imageContainer">
                     <div className="contentContainer">
-                       <h1 className="siteName">04. Mewa Amrieha</h1>
+                       <h1 className="siteName">04.&quot; Mewa Amrieha</h1>
                        <p className="siteDescription">This site dedicated to improve the quality of our coffee.</p>
                     </div>
                     <img src="./images/site5.jpg" alt="image" className="siteImage"/>
