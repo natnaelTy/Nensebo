@@ -1,10 +1,7 @@
 "use client";
 import "./index.css";
 import Link from "next/link";
-import { IoIosArrowForward } from "react-icons/io";
-import SliderImage from "../gallary/SliderImage";
-import { useState } from "react";
-import CommonHeader from "../layout";
+import { RiArrowRightDoubleFill } from "react-icons/ri";
 
 function About() {
   return (
@@ -16,7 +13,7 @@ function About() {
               <h2>Home</h2>
             </Link>
             <h2>
-              <IoIosArrowForward />
+              <RiArrowRightDoubleFill />
             </h2>
             <h2>About</h2>
           </div>
