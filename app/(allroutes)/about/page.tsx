@@ -21,7 +21,7 @@ function About() {
 
       <div className="flex flex-col items-center justify-center gap-16 p-4">
         <h1 className="text-4xl text-green-700 font-bold">
-          About <span className="text-gray-900 font-thin">Us</span>
+          About <span className="text-gray-900 font-extralight">Us</span>
         </h1>
         <div className="max-w-[1200px] w-full">
           <img
@@ -70,8 +70,8 @@ function About() {
             Ethiopia. We want to support local communities, be good to the
             environment, and offer you a variety of excellent goods. We aim to
             do business responsibly, making a positive impact in the coffee and
-            agriculture sectors while making sure you're happy with what we
-            provide.  To promote and export high-quality Arabica coffee beans
+            agriculture sectors while making sure {`you're`} happy with what we
+            provide. To promote and export {`high-quality`} Arabica coffee beans
             from Ethiopia to international markets, while supporting local
             farmers and communities in orphan school aid and other in the
             region.
