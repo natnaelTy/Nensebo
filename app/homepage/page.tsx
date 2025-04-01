@@ -4,6 +4,7 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import "./index.css";
 import { Nunito } from "next/font/google";
+import image from "./ImagesData";
 
 export const nunitoSans = Nunito({
   variable: "--font-nunito-mono",
@@ -11,23 +12,16 @@ export const nunitoSans = Nunito({
 })
 
 export default function Home() {
-  const [images, setImages] = useState([]);
   const [currentSlide, setCurrentSlide] = useState(0);
 
-  // Fetch images from public/imgSlide.json
-  useEffect(() => {
-    fetch("/LandingPageImages.json")
-      .then((res) => res.json())
-      .then((data) => setImages(data));
-  }, []);
 
   // Auto-slide functionality
   useEffect(() => {
     const interval = setInterval(() => {
-      setCurrentSlide((prev) => (prev === images.length - 1 ? 0 : prev + 1));
+      setCurrentSlide((prev) => (prev === image.length - 1 ? 0 : prev + 1));
     }, 4000);
     return () => clearInterval(interval);
-  }, [images.length]);
+  }, [image.length]);
 
 
 
@@ -61,8 +55,8 @@ export default function Home() {
          max-w-xs md:max-w-sm w-full h-auto z-10">
             <img src="/images/banner_coffee_bag.png" alt="" className="object-cover w-full h-full" />
           </div>
-          {images.length > 0 &&
-            images.map((img, index) => (
+          {image.length > 0 &&
+            image.map((img, index) => (
               <img
                 key={index}
                 src={img.images}
