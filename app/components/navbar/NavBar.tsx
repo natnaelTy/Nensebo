@@ -4,8 +4,8 @@ import  Link  from 'next/link'
 import './style.css';
 import { HiMenuAlt3 } from "react-icons/hi";
 import { LiaTimesSolid } from "react-icons/lia";
-import { motion } from "framer-motion";
-import { AnimatePresence } from "framer-motion";
+import DropDown from "./DropDown";
+
 
 function NavBar(){
 
@@ -58,7 +58,7 @@ function NavBar(){
       }
     },[])
 
-    function hanldeShowMenu(){
+    function handleShowMenu(){
         setShowMenu(!showMenu);
     }
 
@@ -80,22 +80,10 @@ function NavBar(){
 
                  {/* hamburger menu */}
                  {
-                    <button className="lg:hidden p-2 absolute top-5 right-2" style={{fontSize: '30px'}} onClick={hanldeShowMenu}>{showMenu ? <div><LiaTimesSolid/></div>  : <div><HiMenuAlt3/></div>}</button>
+                    <button className="lg:hidden p-2 absolute top-5 right-2" style={{fontSize: '30px'}} onClick={handleShowMenu}>{showMenu ? <div><LiaTimesSolid/></div>  : <div><HiMenuAlt3/></div>}</button>
                  }  
             </nav>
-              <AnimatePresence>
-                 {showMenu && (
-                    <motion.div variants={menuVar}
-                                initial="initial"
-                                animate="animate"
-                                exit="exit"
-                                className="navDropDown md:hidden origin-top flex basis-full items-start justify-between w-full top-0 bg-white z-20 fixed gap-15 p-10 ">
-                           <ul onClick={hanldeShowMenu} className="flex flex-col items-start justify-start gap-10 mt-8">
-                             <NavLinks/>
-                          </ul>         
-                    </motion.div>
-                 )}
-             </AnimatePresence>
+            <DropDown menuVar={menuVar} handleShowMenu={handleShowMenu} showMenu={showMenu}/>
         </div>
     )
 }
