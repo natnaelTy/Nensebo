@@ -15,17 +15,17 @@
     @apply text-green-800 text-5xl mb-2 bg-green-100 rounded-full p-2;
   }
   .aboutUsH1Tag {
-    @apply text-lg md:text-xl font-semibold max-w-xs;
+    @apply text-sm md:text-lg font-semibold max-w-xs;
   }
   .learnMoreBtn {
     @apply px-4 font-semibold py-3 bg-green-800 text-white rounded-md hover:bg-green-600 transition duration-300 ease-in;
   }
   /* why choose us */
   .whyChooseUsContainer {
-    @apply flex items-center justify-around flex-col lg:flex-row w-full p-4 md:p-6 lg:p-16 gap-10;
+    @apply flex items-center justify-around flex-col lg:flex-row w-full p-4 md:p-6 lg:p-16 gap-10 md:gap-5;
   }
   .whyChooseUsCard {
-    @apply flex flex-col items-center justify-center text-center gap-4 bg-[#000000b7] max-w-[350px] h-[260px] md:h-[350px] w-full rounded-xl;
+    @apply flex flex-col items-center justify-center text-center gap-4 bg-[#000000b7] max-w-[350px] h-[280px] md:h-[350px] w-full rounded-xl;
   }
   .whyChooseUsH1 {
     @apply text-white text-2xl md:text-3xl font-bold;
@@ -48,7 +48,7 @@
   }
   /* what we offer component*/
 .WhatWeOfferCard {
-  @apply flex flex-col items-center justify-between shadow-xl hover:shadow-2xl rounded-xl w-[360px] h-[760px] m-auto overflow-hidden bg-white;
+  @apply flex flex-col items-center justify-between shadow-xl hover:shadow-2xl rounded-xl max-w-[360px] h-[760px] m-auto overflow-hidden bg-white;
 }
 .WhatWeOfferCardImage {
   @apply object-cover w-full rounded-t-xl h-64 transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110;
