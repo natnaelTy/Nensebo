@@ -7,19 +7,19 @@ interface ImageDataType{
 const data = <ImageDataType[]> [
     {
         id: 1,
-        imageUrl : "./images/site3.jpg"
+        imageUrl : "/images/site3.jpg"
     },
     {
         id: 2,
-        imageUrl : "./images/site7.jpg"
+        imageUrl : "/images/site7.jpg"
     },
     {
         id: 3,
-        imageUrl : "./images/homepic.jpg"
+        imageUrl : "/images/homepic.jpg"
     },
     {
         id: 4,
-        imageUrl : "./images/second-pic.jpg"
+        imageUrl : "/images/second-pic.jpg"
     }
 ]
 
