@@ -48,7 +48,7 @@
   }
   /* what we offer component*/
 .WhatWeOfferCard {
-  @apply flex flex-col items-center justify-between shadow-xl hover:shadow-2xl rounded-xl w-[360px] h-[780px] m-auto overflow-hidden bg-white;
+  @apply flex flex-col items-center justify-between shadow-xl hover:shadow-2xl rounded-xl w-[360px] h-[760px] m-auto overflow-hidden bg-white;
 }
 .WhatWeOfferCardImage {
   @apply object-cover w-full rounded-t-xl h-64 transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110;
