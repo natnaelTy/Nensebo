@@ -6,7 +6,7 @@ export default function WhatWeOffer() {
 
   return (
     <>
-      <div className="mb-20 p-1 lg:p-12 bg-gray-100">
+      <div className="mb-20 p-1 lg:p-8 bg-gray-100">
         <motion.div
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -20,7 +20,7 @@ export default function WhatWeOffer() {
           <div className="underlineForTitle"></div>
         </motion.div>
 
-        <div className="flex justify-center flex-wrap gap-8 w-full h-full mt-10 p-3">
+        <div className="flex justify-around flex-wrap  w-full h-full mt-10 p-3">
           {data.length > 0 &&
             data.map((card, index) => (
               <motion.div
