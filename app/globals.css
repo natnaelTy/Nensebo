@@ -6,7 +6,7 @@
 @layer utilities {
   /* about us in short */
   .aboutCompanyP {
-    @apply text-sm md:text-lg font-semibold text-green-700 bg-green-100 px-6 py-2 rounded-full;
+    @apply text-sm md:text-lg font-medium text-green-700 bg-green-100 px-6 py-2 rounded-full;
   }
   .aboutUsCard {
     @apply flex flex-col items-start;
@@ -15,7 +15,7 @@
     @apply text-green-800 text-5xl mb-2 bg-green-100 rounded-full p-2;
   }
   .aboutUsH1Tag {
-    @apply text-lg md:text-xl font-bold max-w-xs;
+    @apply text-lg md:text-xl font-semibold max-w-xs;
   }
   .learnMoreBtn {
     @apply px-4 font-semibold py-3 bg-green-800 text-white rounded-md hover:bg-green-600 transition duration-300 ease-in;
@@ -48,7 +48,7 @@
   }
   /* what we offer component*/
 .WhatWeOfferCard {
-  @apply flex flex-col items-center justify-between shadow-xl hover:shadow-2xl rounded-xl w-[370px] h-[700px] gap-4 m-auto overflow-hidden bg-white;
+  @apply flex flex-col items-center justify-between shadow-xl hover:shadow-2xl rounded-xl w-[370px] h-[760px] gap-4 m-auto overflow-hidden bg-white;
 }
 .WhatWeOfferCardImage {
   @apply object-cover w-full rounded-t-xl h-64 transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110;
