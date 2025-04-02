@@ -15,14 +15,14 @@ export default function Home() {
       setCurrentSlide((prev) => (prev === data.length - 1 ? 0 : prev + 1));
     }, 4000);
     return () => clearInterval(interval);
-  }, []);
+  }, []); 
 
 
 
   return (
     <>
       <div className="home relative">
-        <div className="md:flex flex-cols items-center justify-around gap-4 min-h-screen pt-30 md:pt-0 w-full">
+        <div className="flex flex-col md:flex-row items-center md:justify-around justify-center gap-12 min-h-screen pt-30 md:pt-0 w-full">
           <motion.div
             initial={{ opacity: 0, y: 150 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -35,7 +35,7 @@ export default function Home() {
              In Flavor
             </h1>
 
-            <p className="text-white text-md z-10 max-w-xl">
+            <p className="text-white text-sm md:text-base z-10 max-w-xl">
               We source premium coffee beans directly from our farm in
               Ethiopia’s coffee-producing regions, focusing on global
               distribution.
@@ -46,8 +46,8 @@ export default function Home() {
           </motion.div>
           
           <div className="relative
-         max-w-xs md:max-w-sm w-full h-auto z-10">
-            <img src="/images/banner_coffee_bag.png" alt="" className="object-cover w-full h-full" />
+         max-w-[230px] md:max-w-sm w-full h-auto z-10">
+            <img src="/images/banner_coffee_bag.png" alt="coffee bag" className="object-cover w-full h-full" />
           </div>
           {data.length > 0 &&
             data.map((img, index) => (
