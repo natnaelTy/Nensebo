@@ -82,7 +82,7 @@ function ShortAbout() {
                   <PiPhoneIncomingThin className="aboutUsIcon"/>
                   <div className="aboutUsCard">
                       <p className="text-gray-500 text-sm md:text-base font-medium">Phone : </p>
-                      <h2 className="text-base md:text-xl font-bold">+251 911828573</h2>
+                      <h2 className="text-base md:text-xl font-semibold">+251 911828573</h2>
                   </div>
               </div>
             </div>
