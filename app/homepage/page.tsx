@@ -4,6 +4,7 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import "./index.css";
 import data from "./ImagesData";
+import Image from "next/image";
 
 export default function Home() {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -28,7 +29,7 @@ export default function Home() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 1.5 }}
             viewport={{ once: true }}
-            className="flex flex-col items-center md:items-start justify-center p-3 gap-2 text-center md:text-left"
+            className="flex flex-col items-center md:items-start justify-center p-3 gap-4 text-center md:text-left"
           >
             <h1 className="max-w-xl text-4xl text-white font-bold md:text-6xl z-10">
               Direct From Farm, <span className="text-green-700 font-extrabold">Pure </span>
@@ -47,14 +48,21 @@ export default function Home() {
           
           <div className="relative
          max-w-[230px] md:max-w-sm w-full h-auto z-10">
-            <img src="/images/banner_coffee_bag.png" alt="coffee bag" className="object-cover w-full h-full" />
+            <Image src="/images/banner_coffee_bag.png" width={230} height={230} alt="coffee bag" className="w-full h-full object-cover" />
           </div>
           {data.length > 0 &&
             data.map((img, index) => (
-              <img
+              <Image
                 key={index}
                 src={img.imageUrl}
                 alt="image"
+                quality={100}
+                fill
+                sizes="100vw"
+                style={{
+                  objectFit: "cover",
+                  position: "absolute"
+                }}
                 className={`showCurrentSlide ${
                   currentSlide === index ? "" : "hide"
                 }`}
