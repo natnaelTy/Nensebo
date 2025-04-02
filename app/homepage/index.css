@@ -1,8 +1,5 @@
 
 .showCurrentSlide{
-    object-fit: cover;
-    height: 100%;
-    width: 100%;
     z-index: -1;
     top: 0;
     position: absolute;
