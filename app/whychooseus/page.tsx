@@ -26,7 +26,7 @@ function WhyChooseUs() {
             </div>
             <div className="whyChooseUsCard">
               <FaRegHandshake className="text-8xl md:text-9xl text-white bg-red-500 rounded-full p-5"/>
-              <h1 className="whyChooseUsH1">Ethical Business Practices</h1>
+              <h1 className="whyChooseUsH1 max-w-xs">Ethical Business Practices</h1>
               <p className="whyChooseUs_P">We value fair trade, transparency, and sustainability in every step of the process.</p>
             </div>
             <div className="whyChooseUsCard">
