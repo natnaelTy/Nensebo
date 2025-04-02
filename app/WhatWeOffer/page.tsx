@@ -20,7 +20,7 @@ export default function WhatWeOffer() {
           <div className="underlineForTitle"></div>
         </motion.div>
 
-        <div className="flex justify-around flex-col md:flex-wrap lg:flex-row w-full h-full mt-10 p-4">
+        <div className="flex justify-around flex-col md:flex-wrap lg:flex-row w-full gap-10 md:gap-3 h-full mt-10 p-4">
           {data.length > 0 &&
             data.map((card, index) => (
               <motion.div
