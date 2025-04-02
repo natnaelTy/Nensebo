@@ -39,7 +39,7 @@ function ShortAbout() {
               Mastering Nurture In Coffee
               Production
             </h1>
-            <p className="max-w-xl text-gray-700 text-md">
+            <p className="max-w-xl text-gray-700 text-sm">
               At Nensebo, we are dedicated to sharing the rich, distinctive
               flavors of our <br />
               coffee with the world. Nestled in fertile soil and blessed with an
