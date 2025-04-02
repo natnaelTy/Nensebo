@@ -4,6 +4,10 @@
 /* reuseble class */
 
 @layer utilities {
+  /* nav bar */
+  .liList {
+    @apply font-medium border-3 border-l-green-600 border-white pl-4 p-2;
+  }
   /* about us in short */
   .aboutCompanyP {
     @apply text-sm md:text-lg font-medium text-green-700 bg-green-100 px-6 py-2 rounded-full;
