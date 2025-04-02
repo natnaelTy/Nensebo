@@ -10,7 +10,7 @@ import { TfiLocationPin } from "react-icons/tfi";
 function Footer() {
   return (
     <div className="bg-green-950 p-4">
-    <div className="flex flex-col items-start justify-around md:flex-row p-4 py-10 gap-10 md:gap-0 text-white">
+    <div className="flex flex-col items-start justify-around md:flex-row py-10 gap-10 md:gap-0 text-white">
       <div className="flex items-start flex-col justify-start">
         <div className="w-full flex items-center justify-start p-2">
           <img
@@ -21,7 +21,7 @@ function Footer() {
           <h1 className="text-lg md:text-xl font-semibold">Sidama Nensebo</h1>
         </div>
         <p>
-          Speciality coffee from the land <br /> of origin.
+           Direct From Farm, Pure In Flavor 
         </p>
       </div>
 
