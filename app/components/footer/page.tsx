@@ -6,6 +6,8 @@ import { IoLogoWhatsapp } from "react-icons/io";
 import { PiPhoneIncomingThin } from "react-icons/pi";
 import { HiOutlineMail } from "react-icons/hi";
 import { TfiLocationPin } from "react-icons/tfi";
+import Image from "next/image";
+
 
 function Footer() {
   return (
@@ -13,10 +15,12 @@ function Footer() {
     <div className="flex flex-col items-start justify-around md:flex-row py-10 gap-10 md:gap-0 text-white">
       <div className="flex items-start flex-col justify-start">
         <div className="w-full flex items-center justify-start p-2">
-          <img
-            src="./images/coffeelogo.png"
-            alt=""
+          <Image
+            src="/images/coffeelogo.png"
+            alt="logo"
             className="w-[70px] object-cover mb-6"
+            width={70}
+            height={70}
           />
           <h1 className="text-lg md:text-xl font-semibold">Sidama Nensebo</h1>
         </div>
