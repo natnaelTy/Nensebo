@@ -6,7 +6,6 @@ import { AnimatePresence } from "framer-motion";
 interface NavbarProps {
     showMenu: boolean,
     handleShowMenu: () => void,
-    menuVar: {},
 }
 
 function DropDownList () {
@@ -22,7 +21,28 @@ function DropDownList () {
     )
 }
 
-const DropDown: React.FC<NavbarProps> = ({showMenu, handleShowMenu, menuVar}) => {
+const DropDown: React.FC<NavbarProps> = ({showMenu, handleShowMenu}) => {
+
+    const menuVar = {
+        initial:{
+            scaleY: 0,
+        },
+        animate:{
+            scaleY: 1,
+            transition:{
+                duration: 0.5,
+                ease: [0.12, 0, 0.39, 0]
+            }
+        },
+        exit:{
+            scaleY: 0,
+            transition:{
+                duration: 0.8,
+                ease: [0.22, 1, 0.36, 1]
+            }
+        }
+    }
+    
     return(
         <>
          <AnimatePresence>

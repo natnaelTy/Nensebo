@@ -5,32 +5,13 @@ import './style.css';
 import { HiMenuAlt3 } from "react-icons/hi";
 import { LiaTimesSolid } from "react-icons/lia";
 import DropDown from "./DropDown";
-
+import Image from "next/image";
 
 function NavBar(){
 
     const [navbar, setNavBar] = useState(false);
     const [showMenu, setShowMenu] = useState(false);
 
-    const menuVar = {
-        initial:{
-            scaleY: 0,
-        },
-        animate:{
-            scaleY: 1,
-            transition:{
-                duration: 0.5,
-                ease: [0.12, 0, 0.39, 0]
-            }
-        },
-        exit:{
-            scaleY: 0,
-            transition:{
-                duration: 0.8,
-                ease: [0.22, 1, 0.36, 1]
-            }
-        }
-    }
 
     function NavLinks(){
         return(
@@ -68,7 +49,7 @@ function NavBar(){
               <Link href={'/'}>
                 <div className="flex items-center justify-start gap-1 w-[550px]">
                     <div className="logo relative w-[65px] p-2 h-[65px]">
-                       <img src="./images/coffeelogo.png" alt=""  className="w-full object-cover text-black"/>
+                       <Image src="/images/coffeelogo.png" alt="logo" width={65} height={65}  className="w-full object-cover text-black"/>
                      </div>
                      <h1 className="text-sm md:text-2xl font-semibold">Sidama Nensebo</h1>
                 </div>
@@ -83,7 +64,7 @@ function NavBar(){
                     <button className="lg:hidden p-2 absolute top-5 right-2" style={{fontSize: '30px'}} onClick={handleShowMenu}>{showMenu ? <div><LiaTimesSolid/></div>  : <div><HiMenuAlt3/></div>}</button>
                  }  
             </nav>
-            <DropDown menuVar={menuVar} handleShowMenu={handleShowMenu} showMenu={showMenu}/>
+            <DropDown handleShowMenu={handleShowMenu} showMenu={showMenu}/>
         </div>
     )
 }
