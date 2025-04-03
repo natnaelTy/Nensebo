@@ -7,7 +7,12 @@ export default function WhatWeOffer() {
 
   return (
     <>
-      <div className="mb-20 p-1 lg:p-4 bg-gray-100">
+      <div className="mb-20 p-1 lg:p-4 bg-gray-100 relative">
+        
+      <div className="max-w-sm h-auto absolute top-2/4 left-1/2 transform -translate-x-1/2 -translate-y-1/2 opacity-20">
+        <Image width={400} height={400} src="/images/coffeeplant.png" alt="" className="w-full h-full object-cover"/>
+      </div>
+      
         <motion.div
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
