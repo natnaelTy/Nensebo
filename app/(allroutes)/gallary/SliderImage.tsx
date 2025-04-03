@@ -18,6 +18,8 @@ const SliderImage: React.FC<SlideImageProps> = ({
   toggleShowImage,
   showFullImage,
 }) => {
+
+
   function handlePrevious() {
     setCurrentSlide(currentSlide === 0 ? images.length - 1 : currentSlide - 1);
   }
@@ -28,7 +30,8 @@ const SliderImage: React.FC<SlideImageProps> = ({
   
   useEffect(() => {
     window.addEventListener("touchend", handleNextSlide);
-  },[handleNextSlide])
+  },[]);
+
   return (
     <div
       className={
