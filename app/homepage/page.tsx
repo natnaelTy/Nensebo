@@ -41,7 +41,7 @@ export default function Home() {
               Ethiopia’s coffee-producing regions, focusing on global
               distribution.
             </p>
-            <button className="bg-transparent text-white font-bold border-2 border-white px-4 py-3 text-sm rounded-lg uppercase mt-8 hover:bg-white hover:text-black z-10 transition duration-300 ease-in">
+            <button className="primarybtn">
               <Link href="/contact">Contact Us</Link>
             </button>
           </motion.div>
