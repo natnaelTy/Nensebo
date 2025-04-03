@@ -2,16 +2,19 @@
 import { PiCertificate } from "react-icons/pi";
 import { FaRegHandshake } from "react-icons/fa6";
 import { ImEarth } from "react-icons/im";
+import Image from "next/image";
 
 
 function WhyChooseUs() {
   return (
     <div>
       <div className="max-w-full h-auto relative">
-        <img
-          src="./images/coffeebag.jpg"
+        <Image
+          src="/images/coffeebag.jpg"
           alt="image"
-          className="w-full h-[1100px] md:h-[1350px] lg:h-[650px] object-cover"
+          width={900}
+          height={600}     
+          className="w-full h-[1200px] md:h-[1350px] lg:h-[650px] object-cover"
         />
            <h1 className="whyChooseUsTitle">
             Why Choose Us?

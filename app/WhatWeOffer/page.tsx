@@ -1,6 +1,7 @@
 "use client";
 import { motion } from "framer-motion";
 import data from "./data";
+import Image from "next/image";
 
 export default function WhatWeOffer() {
 
@@ -31,9 +32,11 @@ export default function WhatWeOffer() {
                 className="WhatWeOfferCard"
                 key={card.id}
               >
-                <img
+                <Image
                   src={card.imageUrl}
-                  alt=""
+                  alt="image"
+                  width={500}
+                  height={300}
                   className="WhatWeOfferCardImage"
                 />
                 <h2 className="WhatWeOfferTitle">{card.title}</h2>
