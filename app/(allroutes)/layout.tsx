@@ -3,15 +3,20 @@ import { montserrat } from "../layout";
 
 
 
-export default function RouthLayout({
+export default function RootLayout({
     children,
 }: {
     children: React.ReactNode
 }) {
     return (
-        <div>
-             <CommenBanner/>
-            <body className={montserrat.className}>{children}</body>
-        </div>
+        <html lang="en">
+        <body
+          className={montserrat.className}>
+  
+          <CommenBanner/>
+          {children}
+        </body>
+      </html>
+       
     )
 }

@@ -4,6 +4,7 @@ import images from "./Image";
 import SliderImage from "./SliderImage";
 import Link from "next/link";
 import { RiArrowRightDoubleFill } from "react-icons/ri";
+import Image from "next/image";
 
 
 
@@ -47,10 +48,12 @@ function Gallary() {
               key={img.id}
               className="max-w-sm h-[250px] relative cursor-pointer">
     
-              <img
+              <Image
                 onClick={showFullImage}
                 src={img.image}
                 alt="image"
+                width={300}
+                height={300}
                 className="w-full h-full object-cover hover:scale-110 transition-all ease-in"
                 loading="lazy"
               />
