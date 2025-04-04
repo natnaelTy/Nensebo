@@ -25,13 +25,31 @@ function DropDownList () {
 
 const DropDown: React.FC<NavbarProps> = ({showMenu, handleShowMenu}) => {
 
-  
+    const menuVar: any = {
+        initial:{
+            scaleY: 0,
+        },
+        animate:{
+            scaleY: 1,
+            transition:{
+                duration: 0.5,
+                ease: [0.12, 0, 0.39, 0]
+            }
+        },
+        exit:{
+            scaleY: 0,
+            transition:{
+                duration: 0.8,
+                ease: [0.22, 1, 0.36, 1]
+            }
+        }
+    }
     
     return(
         <>
          <AnimatePresence>
                  {showMenu && (
-                    <motion.div 
+                    <motion.div variants={menuVar}
                                 initial="initial"
                                 animate="animate"
                                 exit="exit"
