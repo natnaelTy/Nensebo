@@ -25,7 +25,7 @@ function DropDownList () {
 
 const DropDown: React.FC<NavbarProps> = ({showMenu, handleShowMenu}) => {
 
-    const menuVar: any = {
+    const menuVar: Variants = {
         initial:{
             scaleY: 0,
         },
