@@ -2,11 +2,7 @@
  import { notFound } from "next/navigation";
  import OurSite from "../data";
 
- interface Props {
-    params: {
-      oursitesId: string;
-    };
-  }
+
   
  function SiteDetail({ params }: { params: {oursitesId: string } }) {
 
