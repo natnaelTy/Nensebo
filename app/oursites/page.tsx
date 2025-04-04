@@ -28,7 +28,7 @@ function OurSites() {
           <div className="flex items-center justify-between gap-6 w-full">
             <div className="flex items-start justify-between w-full text-left gap-2">
               {OurSite.length > 0 &&
-                OurSite.map((data, index) => (
+                OurSite.map((data) => (
                   <div
                     key={data.id}
                     className="flex flex-col gap-3 items-start"
