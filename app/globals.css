@@ -8,14 +8,6 @@
   .liList {
     @apply font-medium border-3 border-l-green-600 border-white pl-4 p-2;
   }
-  .home::before{
-    content: '';
-    background-color: #0000009d;
-    width: 100%;
-    height: 100vh;
-    position: absolute;
-    z-index: 0;
-   }
    .primarybtn {
     @apply bg-transparent text-white font-bold border-2 border-white px-4 py-3 text-sm rounded-lg uppercase mt-8 hover:bg-white hover:text-black z-10 transition duration-300 ease-in;
    }
@@ -83,7 +75,7 @@
   @apply text-xl font-medium md:text-2xl text-white z-10;
 }
 .siteDescription {
-  @apply max-w-[260px] text-sm;
+  @apply max-w-[300px] text-sm;
 }
 .siteImage {
   @apply w-full h-full object-cover rounded-lg;
