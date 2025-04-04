@@ -2,11 +2,13 @@
 import  Link  from 'next/link'
 import { motion } from "framer-motion";
 import { AnimatePresence } from "framer-motion";
+import { Variants } from "framer-motion";
 
 interface NavbarProps {
     showMenu: boolean,
     handleShowMenu: () => void,
 }
+
 
 function DropDownList () {
 
@@ -23,7 +25,7 @@ function DropDownList () {
 
 const DropDown: React.FC<NavbarProps> = ({showMenu, handleShowMenu}) => {
 
-    const menuVar = {
+    const menuVar: Variants = {
         initial:{
             scaleY: 0,
         },
