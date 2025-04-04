@@ -8,7 +8,7 @@
     };
   }
   
- function SiteDetail({ params }: Props) {
+ function SiteDetail({ params }: { params: {oursitesId: string } }) {
 
     const site =  OurSite.find((s) => s.id.toString() === params.oursitesId);
 
