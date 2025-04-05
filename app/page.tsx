@@ -9,9 +9,9 @@ export default function Home() {
         <>
           <HomePage/>
           <ShortAbout/>
+          <OurSites/>
           <WhyChooseUs/>
           <WhatWeOffer/>
-          <OurSites/>
         </>
   );
 }
