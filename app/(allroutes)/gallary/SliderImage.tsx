@@ -2,8 +2,8 @@ import { MdOutlineArrowForwardIos } from "react-icons/md";
 import { MdOutlineArrowBackIosNew } from "react-icons/md";
 import images from "./Image";
 import { LiaTimesSolid } from "react-icons/lia";
-import { useEffect } from "react";
-
+import { useSwipeable } from "react-swipeable";
+import Image from "next/image";
 
  interface SlideImageProps {
   currentSlide: number,
@@ -19,18 +19,21 @@ const SliderImage: React.FC<SlideImageProps> = ({
   showFullImage,
 }) => {
 
-
+  // back to previous image
   function handlePrevious() {
     setCurrentSlide(currentSlide === 0 ? images.length - 1 : currentSlide - 1);
   }
-
+   // go next image
   function handleNextSlide() {
     setCurrentSlide(currentSlide === images.length - 1 ? 0 : currentSlide + 1);
   }
   
-  useEffect(() => {
-    window.addEventListener("touchend", handleNextSlide);
-  },[]);
+   // Swipe handlers
+   const handlers = useSwipeable({
+    onSwipedLeft: handleNextSlide,
+    onSwipedRight: handlePrevious,
+    trackMouse: false,
+  });
 
   return (
     <div
@@ -41,7 +44,7 @@ const SliderImage: React.FC<SlideImageProps> = ({
       }
     >
      
-      <div className="relative flex items-center justify-center">
+      <div {...handlers} className="relative flex items-center justify-center">
         <div className="flex items-center justify-center">
           {images && images.length
             ? images.map((imageList, index) => (
@@ -51,10 +54,12 @@ const SliderImage: React.FC<SlideImageProps> = ({
                   }
                   key={imageList.id}
                 >
-                  <img
+                  <Image
                     src={imageList.image}
-                    alt=""
-                    className="w-full h-full object-cover transition-transform duration-500"
+                    width={300}
+                    height={530}
+                    alt="image"
+                    className="w-full h-full object-cover transition-transform duration-500 ease-in"
                   />
                 </div>
               ))
