@@ -1,6 +1,10 @@
 @import "tailwindcss";
+@import 'swiper/css';
 
 
+* {
+  -webkit-font-smoothing: auto;
+}
 /* reuseble class */
 
 @layer utilities {
@@ -72,10 +76,10 @@
   @apply w-full h-full flex items-center flex-wrap justify-center  relative overflow-hidden shadow-2xl;
 }
 .siteName {
-  @apply text-xl font-medium md:text-2xl text-white z-10;
+  @apply text-lg font-semibold text-green-950 md:text-xl z-10;
 }
 .siteDescription {
-  @apply max-w-[300px] text-sm;
+  @apply max-w-[300px] text-xs text-gray-800;
 }
 .siteImage {
   @apply w-full h-full object-cover rounded-lg;
@@ -137,7 +141,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     border-radius: 6px;
-    margin-top: 10px;
+    margin-top: 5px;
 }
 
 }
