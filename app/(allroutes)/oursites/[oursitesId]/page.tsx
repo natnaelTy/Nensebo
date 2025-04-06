@@ -17,7 +17,7 @@ interface Props {
 
 async function SiteDetail({ params }: Props) {
 
-    const { oursitesId } = await params;
+    const { oursitesId } = params;
     
     const site =  OurSite.find((s) => s.id.toString() ===  oursitesId);
 
