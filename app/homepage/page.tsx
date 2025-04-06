@@ -31,7 +31,7 @@ export default function Home() {
             viewport={{ once: true }}
             className="flex flex-col items-center md:items-start justify-center p-3 gap-4 text-center md:text-left"
           >
-            <h1 className="max-w-xl text-4xl text-white font-bold md:text-6xl z-10">
+            <h1 className="antialiased max-w-xl text-4xl text-white font-bold md:text-6xl z-10">
               Direct From Farm, <span className="text-green-700 font-extrabold">Pure </span>
              In Flavor
             </h1>
