@@ -72,6 +72,12 @@
 }
 
 /* our site component */
+.infoBox {
+  @apply flex items-center justify-between w-full p-3 border-b-1 border-gray-600;
+}
+.text_icon {
+  @apply flex items-center justify-center gap-1 text-gray-700 text-sm font-medium;
+}
 .imageContainer {
   @apply w-full h-full flex items-center flex-wrap justify-center  relative overflow-hidden shadow-2xl;
 }
