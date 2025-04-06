@@ -9,15 +9,15 @@ import { MdDateRange } from "react-icons/md";
 import { TfiPackage } from "react-icons/tfi";
 import { PiPlantLight } from "react-icons/pi";
 
-interface Props {
+interface ParamsProps {
   params: {
     oursitesId: string;
   };
 }
 
-async function SiteDetail({ params }: Props) {
-
-    const { oursitesId } = params;
+async function SiteDetail({ params }: {params : Promise<{oursitesId: string}>}) {
+   
+    const  oursitesId  = (await params).oursitesId;
     
     const site =  OurSite.find((s) => s.id.toString() ===  oursitesId);
 
