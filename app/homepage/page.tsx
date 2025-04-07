@@ -23,7 +23,7 @@ export default function Home() {
   return (
     <>
       <div className="home relative">
-        <div className="flex flex-col md:flex-row items-center md:justify-around justify-center gap-12 min-h-screen pt-30 md:pt-0 w-full">
+        <div className="flex flex-col md:flex-row items-center justify-around min-h-screen pt-30 md:pt-0 w-full">
           <motion.div
             initial={{ opacity: 0, y: 150 }}
             whileInView={{ opacity: 1, y: 0 }}
