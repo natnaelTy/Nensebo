@@ -4,6 +4,9 @@ import Image from "next/image";
 import Link from "next/link";
 import { MdPushPin } from "react-icons/md";
 import { RiArrowRightDoubleFill } from "react-icons/ri";
+import { TfiPackage } from "react-icons/tfi";
+import { GoDotFill } from "react-icons/go";
+
 
 function Oursites() {
   return (
@@ -27,13 +30,13 @@ function Oursites() {
         <div className="underlineForTitle"></div>
       </h1>
 
-
-      <div className="flex items-center justify-around gap-5 flex-col md:flex-row w-full h-full mt-20 p-4">
+      <h1 className="procesesTitle">Sun dried station</h1>
+      <div className="procesesContainer">
         {OurSite.length > 0 &&
-          OurSite.map((data) => (
+          [ OurSite["0"], OurSite["3"], OurSite["10"] ].map((data) => (
             <div
               key={data.id}
-              className="overflow-hidden max-w-[500px] lg:max-w-[300px]"
+              className="overflow-hidden w-full max-w-[500px] lg:max-w-[350px]"
             >
               <Image
                 src={data.imageUrl}
@@ -42,18 +45,89 @@ function Oursites() {
                 height={250}
                 className="object-cover w-full rounded-t-xl h-52 "
               />
-              <div className="flex items-start text-left flex-col p-3 gap-3 bg-gray-50 h-[250px]">
-                <p className="text-sm font-medium text-gray-600 flex items-center gap-2">
+              <div className="contentContainer">
+                <p className="icon">
                   <MdPushPin />
                   {data.location}
                 </p>
                 <h1 className="siteName">{data.siteName}</h1>
-                <p className="px-3 py-1 bg-gray-200 text-gray-900 rounded-full text-xs font-semibold">
+                <p className="procesesP">
                   {data.Process}
                 </p>
-                <p className="siteDescription">{data.shortDescription}</p>
+                <p className="flex items-center gap-2 text-sm font-medium"><TfiPackage/> {data.Packaging}</p>
+                <p className="font-medium text-xs w-full flex items-center justify-end gap-1"><GoDotFill className="text-green-500 text-lg"/>Contract available</p>
                 <Link href={`/oursites/${data.id}`}>
-                  <button className="border-1 border-gray-950 rounded-md px-3 py-2 text-sm mt-2 cursor-pointer">
+                  <button className="procesesBtn">
+                    {data.btn}
+                  </button>
+                </Link>
+              </div>
+            </div>
+          ))}
+      </div>
+
+      <h1 className="procesesTitle">Anarobic station</h1>
+      <div className="procesesContainer">
+        {OurSite.length > 0 &&
+          [ OurSite["6"], OurSite["7"], OurSite["8"] ].map((data) => (
+            <div
+              key={data.id}
+              className="overflow-hidden w-full max-w-[500px] lg:max-w-[350px]"
+            >
+              <Image
+                src={data.imageUrl}
+                alt="image"
+                width={280}
+                height={250}
+                className="object-cover w-full rounded-t-xl h-52 "
+              />
+              <div className="contentContainer">
+                <p className="icon">
+                  <MdPushPin />
+                  {data.location}
+                </p>
+                <h1 className="siteName">{data.siteName}</h1>
+                <p className="procesesP">
+                  {data.Process}
+                </p>
+                <p className="flex items-center gap-2 text-sm font-medium"><TfiPackage/> {data.Packaging}</p>
+                <Link href={`/oursites/${data.id}`}>
+                  <button className="procesesBtn">
+                    {data.btn}
+                  </button>
+                </Link>
+              </div>
+            </div>
+          ))}
+      </div>
+
+      <h1 className="procesesTitle">Washed station</h1>
+      <div className="procesesContainer">
+        {OurSite.length > 0 &&
+          [ OurSite["2"], OurSite["1"], OurSite["9"] ].map((data) => (
+            <div
+              key={data.id}
+              className="overflow-hidden w-full max-w-[500px] lg:max-w-[350px]"
+            >
+              <Image
+                src={data.imageUrl}
+                alt="image"
+                width={280}
+                height={250}
+                className="object-cover w-full rounded-t-xl h-52 "
+              />
+              <div className="contentContainer">
+                <p className="icon">
+                  <MdPushPin />
+                  {data.location}
+                </p>
+                <h1 className="siteName">{data.siteName}</h1>
+                <p className="procesesP">
+                  {data.Process}
+                </p>
+                <p className="flex items-center gap-2 text-sm font-medium"><TfiPackage/> {data.Packaging}</p>
+                <Link href={`/oursites/${data.id}`}>
+                  <button className="procesesBtn">
                     {data.btn}
                   </button>
                 </Link>
