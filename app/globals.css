@@ -90,11 +90,23 @@
 .siteImage {
   @apply w-full h-full object-cover rounded-lg;
 }
-.contentContainer {
-  @apply bg-[#0000007b] absolute left-0 bottom-0 flex items-start flex-col justify-around text-white w-full h-full p-4 rounded-lg;
+.procesesTitle {
+  @apply text-3xl md:text-3xl lg:text-4xl font-semibold pl-4 lg:pl-20 mt-8;
 }
-.contentContainer:hover {
-  opacity: 1;
+.procesesContainer {
+  @apply flex items-center justify-evenly gap-5 flex-wrap w-full h-full mt-10 p-4;
+}
+.contentContainer {
+  @apply flex items-start text-left flex-col p-3 gap-4 bg-gray-50 h-[280px];
+}
+.icon {
+  @apply text-sm font-medium text-gray-600 flex items-center gap-2;
+}
+.procesesP {
+  @apply px-3 py-1 bg-gray-200 text-gray-900 rounded-full text-xs font-semibold;
+}
+.procesesBtn {
+  @apply border-1 border-gray-950 rounded-md px-3 py-2 text-sm mt-2 cursor-pointer;
 }
 
 /* footer */
