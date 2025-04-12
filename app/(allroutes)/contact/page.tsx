@@ -18,7 +18,7 @@ function Contact() {
 
   const [result, setResult] = useState<string>("");
   console.log(result);
-  
+
   const onSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     setResult("Sending....");
@@ -104,7 +104,7 @@ function Contact() {
               </p>
             </div>
             <div className="flex flex-col items-center justify-center bg-pink-50 p-7 rounded-md">
-              <TfiTime className="text-2xl md:text-4xl lg:text-5xl bg-pink-200 text-pink-500 rounded-full p-2" />
+              <TfiTime className="text-5xl bg-pink-200 text-pink-500 rounded-full p-2" />
               <h2 className="text-xl font-medium capitalize text-center">
                 working hours
               </h2>
