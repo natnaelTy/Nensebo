@@ -17,7 +17,8 @@ function Contact() {
   const [inputMessage, setInputMessage] = useState<string>("");
 
   const [result, setResult] = useState<string>("");
-
+  console.log(result);
+  
   const onSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     setResult("Sending....");

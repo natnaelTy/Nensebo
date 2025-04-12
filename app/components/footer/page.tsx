@@ -36,7 +36,7 @@ function Footer() {
             <Link href={"/about"}>About</Link>
           </button>
           <button>
-            <Link href={"/oursites"}>Site's</Link>
+            <Link href={"/oursites"}>{`Site's`}</Link>
           </button>
           <button>
             <Link href={"/gallary"}>Gallary</Link>

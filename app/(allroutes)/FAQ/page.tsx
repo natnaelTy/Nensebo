@@ -42,7 +42,7 @@ function OrderingInfo() {
 
       <div className="relative">
         <h1 className="text-center text-2xl md:text-4xl p-2 mt-8 mb-8 font-bold max-w-xl m-auto">
-          What's Available <span className="font-bold text-green-900">and</span>{" "}
+          {`What's`} Available <span className="font-bold text-green-900">and</span>
           what you should know about
         </h1>
         <div className="lg:flex flex-cols items-start justify-between p-4">
