@@ -38,11 +38,11 @@ async function SiteDetail({ params }: {params : Promise<{oursitesId: string}>}) 
             </div>
           </div>
 
-     <div className="p-4 flex items-start flex-wrap justify-between w-full bg-gray-50">
+     <div className="p-3 flex items-start flex-wrap justify-between w-full bg-gray-50">
 
       <Image src={site.imageUrl} alt={site.siteName} width={600} height={500} loading="lazy"/> 
     
-      <div className="flex flex-col items-center justify-center max-w-[750px] w-full p-4">
+      <div className="flex flex-col items-center justify-center max-w-[700px] w-full p-2">
       <div className="w-full">
           <h1 className="uppercase text-2xl md:text-3xl lg:text-4xl font-bold max-w-lg text-green-900">About this coffee station</h1>
           <p className="max-w-3xl mt-5 text-sm text-gray-700">{site.fullDescription}</p>

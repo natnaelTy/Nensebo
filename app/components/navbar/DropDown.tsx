@@ -16,7 +16,8 @@ function DropDownList () {
         <>
         <Link href={'/'}><li className="liList">Home</li></Link>
          <Link href={'/about'}><li className="liList">About</li></Link>
-         <Link href={'/ordering-info'}><li className="liList">Info (FQA)</li></Link>
+         <Link href={'/oursites'}><li className="liList">{`Site's`}</li></Link>
+         <Link href={'/FAQ'}><li className="liList">FQA</li></Link>
          <Link href={'/gallary'}><li className="liList">Gallary</li></Link>
          <Link href={'/contact'}><li className="liList">Contact</li></Link>
         </>

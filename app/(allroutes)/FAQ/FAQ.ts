@@ -23,7 +23,7 @@ const data = <DataTypes[]> [
     },
     {
         id: 3,
-        question: 'How do you ensure the coffee stays fresh during transport?',
+        question: 'How do you ensure the coffee stays fresh during transport ?',
         answer: 'Our beans are carefully packed in jute or vacuum-sealed bags with protective linings to preserve freshness and flavor during transit.'
     },
     {
@@ -49,7 +49,7 @@ const data = <DataTypes[]> [
     {
         id: 8,
         question: 'What’s the minimum order quantity (MOQ) for exports?',
-        answer: 'Our MOQ is [quantity, e.g., 10 bags/1 ton], but we can discuss smaller shipments for new partnerships.'
+        answer: 'Our MOQ is [quantity, { e.g., 10 bags/1 ton }], but we can discuss smaller shipments for new partnerships.'
     },
 ]
 
