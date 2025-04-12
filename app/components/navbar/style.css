@@ -8,6 +8,7 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
+    padding: 10px 20px;
     color: white;
     width: 100%;
 }
@@ -28,7 +29,7 @@
 }
 
 ul li a:hover{
-  border-bottom: 2px solid rgb(30, 97, 30);
+  border-bottom: 2px solid #004f18;
   transition: all 0.8s ease;
 }
 

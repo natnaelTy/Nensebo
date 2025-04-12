@@ -17,13 +17,11 @@ function OurSites() {
           <h1 className="text-3xl md:text-4xl lg:text-5xl font-semibold">
             Discover Our Coffee Source
           </h1>
-          <p className="max-w-sm">
-            Kerchanshe sources coffee from nine different regions in Ethiopia -
-            Sidamo, Guji, Yirgacheffe, Limmu, Bale, Harar, Jimma, Nekemte,
-            Kaffa.
+          <p className="max-w-sm text-sm lg:text-base">
+          Sidama Nensebo is one of the largest coffee producers and exporter in the oromia region , we located in west arsi nensebo , a region renowned for its rich soil, perfect altitude, and perfect climate for growing world-class coffee. We provide best quality coffee that processed over 10 stations
           </p>
           <Link href={"/oursites"}>
-            <button className="bg-green-800 cursor-pointer px-5 font-medium py-3 hover:bg-green-700 text-white rounded-md transition ease-in duration-300">
+            <button className="bg-green-800 cursor-pointer px-4 font-medium py-2 hover:bg-green-700 text-white rounded-md transition ease-in duration-300">
               View All
             </button>
           </Link>
@@ -54,7 +52,7 @@ function OurSites() {
                   </p>
                   <p className="siteDescription">{data.shortDescription}</p>
                   <Link href={`/oursites/${data.id}`}>
-                    <button className="border-1 border-gray-950 rounded-md px-3 py-2 text-sm mt-2 cursor-pointer">
+                    <button className="procesesBtn">
                       {data.btn}
                     </button>
                   </Link>

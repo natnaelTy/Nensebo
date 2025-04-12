@@ -8,10 +8,6 @@ export default function WhatWeOffer() {
   return (
     <>
       <div className="mb-20 p-1 lg:p-4 relative">
-        
-      {/* <div className="max-w-sm h-auto absolute top-2/4 left-1/2 transform -translate-x-1/2 -translate-y-1/2 opacity-20">
-        <Image width={400} height={400} src="/images/coffeeplant.png" alt="" className="w-full h-full object-cover"/>
-      </div> */}
       
         <motion.div
           initial={{ opacity: 0, y: 40 }}
@@ -20,7 +16,7 @@ export default function WhatWeOffer() {
           viewport={{ once: true }}
           className="relative"
         >
-          <h1 className="text-center text-2xl lg:text-3xl font-medium mt-16">
+          <h1 className="text-center text-2xl lg:text-3xl font-semibold mt-16">
             What we offer
           </h1>
           <div className="underlineForTitle"></div>
@@ -42,6 +38,7 @@ export default function WhatWeOffer() {
                   alt="image"
                   width={500}
                   height={300}
+                  loading="lazy"
                   className="WhatWeOfferCardImage"
                 />
                 <h2 className="WhatWeOfferTitle">{card.title}</h2>

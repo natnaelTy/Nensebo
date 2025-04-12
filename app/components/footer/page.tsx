@@ -33,14 +33,16 @@ function Footer() {
         <h1 className="footerHeaderText">Usefull Links</h1>
         <ul className="unorderList">
           <button>
-            <Link href={"/"}>Home</Link>
+            <Link href={"/about"}>About</Link>
           </button>
           <button>
-            <Link href={"/aboutUs"}>About</Link>
+            <Link href={"/oursites"}>Site's</Link>
           </button>
-          <a href="">What we offer</a>
           <button>
-            <Link href={"/ordering-info"}>Info (FAQ)</Link>
+            <Link href={"/gallary"}>Gallary</Link>
+          </button>
+          <button>
+            <Link href={"/FAQ"}>FAQ</Link>
           </button>
           <button>
             <Link href={"/contact"}>Contact</Link>
@@ -50,7 +52,7 @@ function Footer() {
 
       <div className="LinkBox">
         <h1 className="footerHeaderText">Socials</h1>
-        <ul className="unorderList text-xl">
+        <ul className="flex flex-row md:flex-col items-center gap-4 text-xl">
           <li className="hover:text-blue-700">
             <a href="https://www.facebook.com/tadesse.degife.1?mibextid=ZbWKwLhttps://www.facebook.com/tadesse.degife.1?mibextid=ZbWKwL">
               <FaFacebook />

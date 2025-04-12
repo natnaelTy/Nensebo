@@ -14,10 +14,6 @@ const data = <ImageDataType[]> [
         imageUrl : "/images/site7.jpg"
     },
     {
-        id: 3,
-        imageUrl : "/images/homepic.jpg"
-    },
-    {
         id: 4,
         imageUrl : "/images/second-pic.jpg"
     }

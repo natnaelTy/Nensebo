@@ -34,8 +34,8 @@ function Gallary() {
         </div>
 
        {/* title */}
-       <h1 className="text-4xl text-center text-green-700 font-bold mt-10 mb-10">
-         <span className="text-gray-900 font-extralight"> Our</span>  Gallary
+       <h1 className="text-4xl text-center text-green-900 font-bold mt-10 mb-10">
+         <span className="text-slate-950 font-extralight"> Our</span>  Gallary
          <div className="underlineForTitle"></div>
         </h1>
       
@@ -46,7 +46,7 @@ function Gallary() {
             <div
               onClick={() => setCurrentSlide(index)}
               key={img.id}
-              className="max-w-sm h-[250px] relative cursor-pointer">
+              className="max-w-sm min-h-[250px] md:h-[250px] cursor-pointer">
     
               <Image
                 onClick={showFullImage}

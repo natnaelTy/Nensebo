@@ -4,6 +4,7 @@
 
 * {
   -webkit-font-smoothing: auto;
+  box-sizing: border-box;
 }
 /* reuseble class */
 
@@ -45,7 +46,7 @@
     @apply max-w-xs text-gray-200 text-base;
   }
   .whyChooseUsTitle {
-    @apply absolute top-28 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-2xl md:text-3xl lg:text-4xl font-medium text-center;
+    @apply absolute top-28 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-2xl md:text-3xl lg:text-4xl font-semibold text-center;
   }
   /* about detail */
   .h3Title {
@@ -91,7 +92,7 @@
   @apply w-full h-full object-cover rounded-lg;
 }
 .procesesTitle {
-  @apply text-3xl md:text-3xl lg:text-4xl font-semibold pl-4 lg:pl-20 mt-8;
+  @apply text-3xl md:text-3xl lg:text-4xl font-semibold pl-4 lg:pl-22 text-slate-950 mt-8;
 }
 .procesesContainer {
   @apply flex items-center justify-evenly gap-5 flex-wrap w-full h-full mt-10 p-4;
@@ -103,12 +104,30 @@
   @apply text-sm font-medium text-gray-600 flex items-center gap-2;
 }
 .procesesP {
-  @apply px-3 py-1 bg-gray-200 text-gray-900 rounded-full text-xs font-semibold;
+  @apply px-3 py-1 bg-gray-200 text-green-900 rounded-full text-xs font-semibold;
 }
 .procesesBtn {
-  @apply border-1 border-gray-950 rounded-md px-3 py-2 text-sm mt-2 cursor-pointer;
+  @apply border-2 border-green-800 hover:border-green-600 hover:text-green-600 text-green-800 flex items-center gap-2 font-medium hover:shadow-md rounded-md px-3 py-2 text-sm mt-2 cursor-pointer;
 }
-
+.titleDecoration::before {
+  content: "";
+  background-color: #00531d;
+  width: 300px;
+  height: 4px;
+  position: absolute;
+  border-radius: 30px;
+  left: 30%;
+  top: 50%;
+}
+@media only screen and  (max-width: 768px){
+  .titleDecoration::before {
+    width: 200px;
+    top: 100%;
+    left: 5%;
+    margin-top: 5px;
+    height: 3px;
+  }
+}
 /* footer */
 .LinkBox {
   @apply flex items-start justify-center flex-col;
@@ -117,7 +136,7 @@
   @apply text-xl md:text-2xl font-semibold mb-5;
 }
 .unorderList {
-  @apply flex flex-col gap-5 items-start;
+  @apply flex flex-col gap-4 items-start;
 }
 .footerContactCard {
   @apply flex gap-4 items-center justify-start;
@@ -154,7 +173,7 @@
     content: '';
     width: 40px;
     height: 3px;
-    background-color: rgb(22, 140, 22);
+    background-color: #00531d;
     position: absolute;
     left: 50%;
     transform: translate(-50%, -50%);

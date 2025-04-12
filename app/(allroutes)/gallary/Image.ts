@@ -28,7 +28,7 @@ const images = <ImageType[]> [
     },
     {
       id: 5,
-      image: "/images/site1.jpg"
+      image: "/images/onsite-1.jpg"
     },
     {
       id: 6,
@@ -45,6 +45,18 @@ const images = <ImageType[]> [
     {
       id: 9,
       image : "/images/site3.jpg"
+    },
+    {
+      id: 10,
+      image : "/images/anaerobic.jpg"
+    },
+    {
+      id: 11,
+      image : "/images/tade-6.jpg"
+    },
+    {
+      id: 12,
+      image : "/images/tade-4.jpg"
     },
   ]
 

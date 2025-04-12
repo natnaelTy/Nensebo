@@ -25,7 +25,7 @@ export default function Home() {
       <div className="home relative">
         <div className="flex flex-col md:flex-row items-center justify-around min-h-screen pt-30 md:pt-0 w-full">
           <motion.div
-            initial={{ opacity: 0, y: 150 }}
+            initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 1.5 }}
             viewport={{ once: true }}
@@ -46,10 +46,15 @@ export default function Home() {
             </button>
           </motion.div>
           
-          <div className="relative
+          <motion.div 
+           initial={{ opacity: 0, y: 50 }}
+           whileInView={{ opacity: 1, y: 0 }}
+           transition={{ duration: 1.5 }}
+           viewport={{ once: true }}
+          className="relative
          max-w-[230px] md:max-w-sm w-full h-auto z-10">
-            <Image src="/images/banner_coffee_bag.png" width={230} height={230} alt="coffee bag" className="w-full h-full object-cover" />
-          </div>
+            <Image src="/images/banner_coffee_bag.png" width={230} height={230} loading="lazy" alt="coffee bag" className="w-full h-full object-cover" />
+          </motion.div>
           {data.length > 0 &&
             data.map((img, index) => (
               <Image
@@ -58,6 +63,7 @@ export default function Home() {
                 alt="image"
                 quality={100}
                 fill
+                loading="lazy"
                 sizes="100vw"
                 style={{
                   objectFit: "cover",

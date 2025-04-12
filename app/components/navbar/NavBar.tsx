@@ -26,8 +26,8 @@ function NavBar() {
         <Link href={"/gallary"}>
           <li className="hover:text-green-700">Gallary</li>
         </Link>
-        <Link href={"/ordering-info"}>
-          <li className="hover:text-green-700">Info (FQA)</li>
+        <Link href={"/FAQ"}>
+          <li className="hover:text-green-700">FQA</li>
         </Link>
         <Link href={"/contact"}>
           <li className="hover:text-green-700">Contact</li>
@@ -56,6 +56,7 @@ function NavBar() {
   return (
     <>
       <nav className={navbar ? "navbar active" : "navbar"}>
+        <div className="max-w-[1200px] w-full flex items-center justify-between">
         <Link href={"/"}>
           <div className="flex items-center justify-center gap-1">
             <div className="relative max-w-[65px] p-2 h-[65px]">
@@ -64,6 +65,7 @@ function NavBar() {
                 alt="logo"
                 width={65}
                 height={65}
+                loading="lazy"
                 className="w-full object-cover text-black"
               />
             </div>
@@ -76,7 +78,7 @@ function NavBar() {
         <ul className="hidden lg:flex justify-end gap-6 font-medium text-base">
           <NavLinks />
         </ul>
-
+        </div>
         {/* hamburger menu */}
         {
           <button

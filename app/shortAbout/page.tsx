@@ -10,7 +10,7 @@ function ShortAbout() {
   return (
     <>
       <div className="relative">
-        <div className="md:flex flex-cols items-center justify-around gap-4 p-4 min-h-screen">
+        <div className="md:flex flex-cols items-center justify-around gap-4 p-4 min-h-screen mb-8">
           <motion.div
             initial={{ opacity: 0, y: 130 }}
             whileInView={{ opacity: 1, y: 0 }}

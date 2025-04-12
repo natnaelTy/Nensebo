@@ -23,7 +23,7 @@ function About() {
 
       <div className="flex flex-col items-center justify-center gap-16 p-4">
          {/* title */}
-       <h1 className="text-4xl text-center text-green-700 font-bold mt-10 mb-10">
+       <h1 className="text-4xl text-center text-green-900 font-bold mt-10 mb-10">
         About <span className="text-gray-900 font-extralight">Us</span>
         <div className="underlineForTitle"></div>
       </h1>
@@ -34,12 +34,13 @@ function About() {
             alt="coffee"
             width={1200}
             height={300}
+            loading="lazy"
             className="w-full h-[170px] md:h-[300px] object-cover rounded-lg"
           />
         </div>
 
         <div className="flex flex-col items-start justify-center p-4 md:p-8 gap-5 max-w-[1200px] w-full inset-shadow-2xs shadow-lg rounded-lg bg-gray-50">
-          <p className="text-2xl mb-6 md:text-4xl lg:text-5xl font-bold text-green-800 uppercase">
+          <p className="text-2xl mb-6 md:text-4xl lg:text-5xl font-bold text-green-900 uppercase">
             About our company
           </p>
           <h3 className="h3Title">
