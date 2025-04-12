@@ -16,7 +16,7 @@ function OrderingInfo() {
   }
 
   function handleShowAnswer(getCurrentId: number) {
-    let copySelected = [...selected];
+    const copySelected = [...selected];
     const findIndexOfCurrentId = copySelected.indexOf(getCurrentId);
 
     if (findIndexOfCurrentId === -1) copySelected.push(getCurrentId);
