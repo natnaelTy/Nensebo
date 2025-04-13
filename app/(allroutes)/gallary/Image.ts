@@ -56,8 +56,25 @@ const images = <ImageType[]> [
     },
     {
       id: 12,
-      image : "/images/tade-4.jpg"
+      image : "/images/tadepic2.jpg"
     },
+    {
+      id: 13,
+      image : "/images/tadepic3.jpg"
+    },
+    {
+      id: 14,
+      image : "/images/tadepic6.jpg"
+    },
+    {
+      id: 15,
+      image : "/images/tadepic5.jpg"
+    },
+    {
+      id: 16,
+      image : "/images/tadepic7.jpg"
+    },
+    
   ]
 
 export default images;

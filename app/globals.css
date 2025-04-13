@@ -116,12 +116,12 @@
   height: 4px;
   position: absolute;
   border-radius: 30px;
-  left: 80%;
+  left: 30%;
   top: 50%;
 }
 @media only screen and  (max-width: 768px){
   .titleDecoration::before {
-    width: 200px;
+    width: 100px;
     top: 100%;
     left: 5%;
     margin-top: 5px;
@@ -153,7 +153,7 @@
   @apply right-5;
 }
 .circle-indicator {
-  @apply absolute bottom-8 flex gap-4;
+  @apply absolute bottom-3 flex gap-4;
 }
 .current-indicator {
   @apply bg-white w-[30px] rounded-full border-none transition duration-300 ease-in;

@@ -55,7 +55,7 @@ const DropDown: React.FC<NavbarProps> = ({showMenu, handleShowMenu}) => {
                                 animate="animate"
                                 exit="exit"
                                 className="md:hidden origin-top flex basis-full items-start justify-between w-full top-22 bg-white shadow-xl z-20 fixed p-2">
-                           <ul onClick={handleShowMenu} className="flex flex-col items-start justify-center gap-8 py-4 ">
+                           <ul onClick={handleShowMenu} className="flex flex-col items-start justify-center gap-5 py-4 text-sm">
                              <DropDownList/>
                           </ul>         
                     </motion.div>

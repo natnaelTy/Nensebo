@@ -40,13 +40,13 @@ function Gallary() {
         </h1>
       
       <div
-        className="flex flex-wrap items-center justify-center gap-4 w-full h-full p-4">
+        className="grid grid-cols-3 lg:grid-cols-4 items-center justify-center gap-3 w-full h-full p-4">
         {images.length > 0 &&
           images.map((img, index) => (
             <div
               onClick={() => setCurrentSlide(index)}
               key={img.id}
-              className="max-w-sm min-h-[250px] md:h-[250px] cursor-pointer">
+              className="max-w-lg h-[100px] lg:h-[200px] cursor-pointer">
     
               <Image
                 onClick={showFullImage}

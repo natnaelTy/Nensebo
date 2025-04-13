@@ -56,8 +56,9 @@ const SliderImage: React.FC<SlideImageProps> = ({
                 >
                   <Image
                     src={imageList.image}
-                    width={300}
-                    height={530}
+                    width={500}
+                    height={400}
+                    loading="lazy"
                     alt="image"
                     className="w-full h-full object-cover transition-transform duration-500 ease-in"
                   />

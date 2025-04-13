@@ -82,7 +82,7 @@ function OrderingInfo() {
           </div>
           <div className="max-w-xl w-full relative flex flex-col p-2">
             <Image
-              src="/images/tade-1.jpg"
+              src="/images/tadepic4.jpg"
               alt="on site"
               width={300}
               height={600}
