@@ -69,10 +69,10 @@ function Contact() {
       <div>
         <div>
           <div className="flex flex-col gap-2 mt-20 relative">
-            <h3 className="capitalize text-orange-500 font-medium font-medium text-center">
+            <h3 className="capitalize text-orange-500 font-medium text-center">
               Our Contact
             </h3>
-            <h1 className="text-3xl md:text-4xl lg:text-5xl text-green-800 capitalize font-semibold text-center">
+            <h1 className="text-2xl lg:text-3xl text-green-800 capitalize font-semibold text-center">
               Get in touch
             </h1>
           </div>

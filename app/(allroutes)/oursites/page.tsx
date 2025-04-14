@@ -25,13 +25,13 @@ function Oursites() {
       </div>
 
       {/* title */}
-      <h1 className="text-4xl text-center text-green-900 font-bold mt-10 mb-10">
+      <div className="p-2">
+      <h1 className="text-2xl lg:text-3xl text-center text-green-900 font-bold mt-10 mb-10">
         <span className="text-gray-900 font-extralight"> Our</span> {`Site's`}
         <div className="underlineForTitle"></div>
       </h1>
       <div className="relative">
-        <h1 className="procesesTitle">Sun dried station</h1>
-        <span className="titleDecoration"></span>
+        <h1 className="procesesTitle">Sun dried station</h1> 
       </div>
       <div className="procesesContainer">
         {OurSite.length > 0 &&
@@ -72,7 +72,6 @@ function Oursites() {
 
       <div className="relative">
         <h1 className="procesesTitle">Anarobic station</h1>
-        <span className="titleDecoration"></span>
       </div>
 
       <div className="procesesContainer">
@@ -109,7 +108,6 @@ function Oursites() {
 
       <div className="relative">
         <h1 className="procesesTitle">Washing station</h1>
-        <span className="titleDecoration"></span>
       </div>
       <div className="procesesContainer">
         {OurSite.length > 0 &&
@@ -141,6 +139,7 @@ function Oursites() {
               </div>
             </div>
           ))}
+      </div>
       </div>
     </>
   );

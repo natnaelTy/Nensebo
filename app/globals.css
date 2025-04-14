@@ -80,7 +80,7 @@
   @apply flex items-center justify-center gap-1 text-gray-700 text-sm font-medium;
 }
 .imageContainer {
-  @apply w-full h-full flex items-center flex-wrap justify-center  relative overflow-hidden shadow-2xl;
+  @apply w-full h-full flex items-center flex-wrap justify-center relative overflow-hidden shadow-2xl;
 }
 .siteName {
   @apply text-lg font-semibold text-green-950 md:text-xl z-10;
@@ -92,7 +92,7 @@
   @apply w-full h-full object-cover rounded-lg;
 }
 .procesesTitle {
-  @apply text-3xl md:text-3xl lg:text-4xl font-semibold pl-4 lg:pl-22 text-slate-950 mt-8;
+  @apply text-xl lg:text-2xl text-center bg-green-900 max-w-[1180px] px-8 rounded-xl m-auto py-2 text-white mt-8 ;
 }
 .procesesContainer {
   @apply flex items-center justify-evenly gap-5 flex-wrap w-full h-full mt-10 p-4;
@@ -153,13 +153,13 @@
   @apply right-5;
 }
 .circle-indicator {
-  @apply absolute bottom-3 flex gap-4;
+  @apply absolute bottom-3 flex gap-2 justify-center items-center;
 }
 .current-indicator {
-  @apply bg-white w-[30px] rounded-full border-none transition duration-300 ease-in;
+  @apply bg-white w-[25px] lg:w-[30px] h-[7px] lg:h-[8px] rounded-full border-none transition duration-300 ease-in;
 }
 .hide-indicator {
-  @apply bg-slate-400 w-[7px] lg:w-[8px] h-[7px] lg:h-[8px]
+  @apply bg-gray-600 w-[7px] lg:w-[8px] h-[7px] lg:h-[8px];
 }
 
 /* benner component */

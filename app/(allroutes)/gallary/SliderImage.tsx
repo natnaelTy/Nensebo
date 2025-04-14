@@ -66,8 +66,12 @@ const SliderImage: React.FC<SlideImageProps> = ({
               ))
             : null}
         </div>
+
+      {/*currentSlide*/}
+         <span className="absolute top-3 right-3 rounded-xl text-xs bg-[#0000009c] px-3 py-1 text-white">{currentSlide} {`/`}  {images.length} </span>
       </div>
 
+      
       {/* circle indicators */}
       <span className="circle-indicator">
         {images && images.length
@@ -84,6 +88,7 @@ const SliderImage: React.FC<SlideImageProps> = ({
             ))
           : null}
       </span>
+      
 
       {/* arrows */}
       <button

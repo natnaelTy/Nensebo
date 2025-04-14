@@ -23,7 +23,7 @@ function About() {
 
       <div className="flex flex-col items-center justify-center gap-16 p-4">
          {/* title */}
-       <h1 className="text-4xl text-center text-green-900 font-bold mt-10 mb-10">
+       <h1 className="text-2xl lg:text-3xl text-center text-green-900 font-bold mt-10 mb-10">
         About <span className="text-gray-900 font-extralight">Us</span>
         <div className="underlineForTitle"></div>
       </h1>

@@ -5,7 +5,7 @@ import SliderImage from "./SliderImage";
 import Link from "next/link";
 import { RiArrowRightDoubleFill } from "react-icons/ri";
 import Image from "next/image";
-
+import { motion } from "framer-motion";
 
 
 function Gallary() {
@@ -34,16 +34,20 @@ function Gallary() {
         </div>
 
        {/* title */}
-       <h1 className="text-4xl text-center text-green-900 font-bold mt-10 mb-10">
+       <h1 className="text-2xl lg:text-3xl text-center text-green-900 font-bold mt-10 mb-10">
          <span className="text-slate-950 font-extralight"> Our</span>  Gallary
          <div className="underlineForTitle"></div>
         </h1>
       
       <div
-        className="grid grid-cols-3 lg:grid-cols-4 items-center justify-center gap-3 w-full h-full p-4">
+        className="grid grid-cols-3 lg:grid-cols-4 items-center justify-center gap-2 w-full h-full p-4">
         {images.length > 0 &&
           images.map((img, index) => (
-            <div
+            <motion.div
+                initial={{ opacity: 0, y: 50 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 1.3, delay: index * 0.3 }} // Stagger animation
+                viewport={{ once: true }}
               onClick={() => setCurrentSlide(index)}
               key={img.id}
               className="max-w-lg h-[100px] lg:h-[200px] cursor-pointer">
@@ -57,7 +61,7 @@ function Gallary() {
                 className="w-full h-full object-cover hover:scale-110 transition-all ease-in"
                 loading="lazy"
               />
-            </div>
+            </motion.div>
           ))}
       </div>
       

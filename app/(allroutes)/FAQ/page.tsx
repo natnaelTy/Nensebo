@@ -41,12 +41,12 @@ function OrderingInfo() {
       </div>
 
       <div className="relative">
-        <h1 className="text-center text-2xl md:text-4xl p-2 mt-8 mb-8 font-bold max-w-xl m-auto">
+        <h1 className="text-center text-2xl md:text-3xl p-2 mt-8 mb-8 font-bold max-w-xl m-auto">
           {`What's`} Available <span className="font-bold text-green-900">and </span>
           what you should know about
         </h1>
         <div className="lg:flex flex-cols items-start justify-between p-4">
-          <div className="paragraph flex flex-col items-start justify-center gap-5">
+          <div className="flex flex-col items-start justify-center gap-5">
             <div className="flex flex-col gap-6">
               {data && data.length
                 ? data.map((dataItem, index) => (
