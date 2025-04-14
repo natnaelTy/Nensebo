@@ -3,11 +3,12 @@ import "./index.css";
 import Link from "next/link";
 import { RiArrowRightDoubleFill } from "react-icons/ri";
 import Image from "next/image";
-
+import Head from "next/head";
 
 function About() {
   return (
     <>
+     <Head>About Us</Head>
       {/* common banner photo */}
         <div className="bannerContainer">
           <div className="nestedBannerContainer">

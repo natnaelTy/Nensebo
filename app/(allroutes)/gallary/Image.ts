@@ -74,6 +74,10 @@ const images = <ImageType[]> [
       id: 16,
       image : "/images/tadepic7.jpg"
     },
+    {
+      id: 17,
+      image : "/images/tadepic10.jpg"
+    },
     
   ]
 

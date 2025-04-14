@@ -35,7 +35,7 @@ function Oursites() {
       </div>
       <div className="procesesContainer">
         {OurSite.length > 0 &&
-          [OurSite["0"], OurSite["3"], OurSite["10"]].map((data) => (
+          [OurSite["0"], OurSite["3"], OurSite["10"], OurSite["5"]].map((data) => (
             <div
               key={data.id}
               className="overflow-hidden w-full max-w-[500px] lg:max-w-[350px] shadow-md rounded-lg"

@@ -9,6 +9,8 @@ import { TfiTime } from "react-icons/tfi";
 import { RiArrowRightDoubleFill } from "react-icons/ri";
 import { CiUser } from "react-icons/ci";
 import { CiLocationArrow1 } from "react-icons/ci";
+import Head from "next/head";
+
 
 function Contact() {
   const [inputName, setInputName] = useState<string>("");
@@ -53,6 +55,7 @@ function Contact() {
 
   return (
     <>
+     <Head>Contact</Head>
       {/* common banner photo */}
       <div className="bannerContainer">
         <div className="nestedBannerContainer">
@@ -115,8 +118,8 @@ function Contact() {
           </div>
         </div>
 
-        <div className="bg-gray-50 flex items-center justify-center mb-10 mt-10">
-          <div className="flex items-center justify-between p-4 flex-col shadow-md rounded-2xl mt-8 lg:flex-row w-full max-w-[600px] h-full">
+        <div className="bg-gray-50 flex items-center flex-col lg:flex-row justify-center mb-10 mt-10">
+          <div className="flex items-center justify-between p-4 flex-col mt-8 lg:flex-row w-full max-w-[600px] h-full">
             <div className="flex flex-col items-center justify-center gap-3 w-full">
               <h1 className="text-xl md:text-2xl lg:text-3xl text-green-800 font-bold text-center">
                 Send us a message!{" "}
@@ -185,15 +188,15 @@ function Contact() {
               </form>
             </div>
           </div>
-        </div>
-        <iframe
+          <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3042.7965821438456!2d38.73454310590544!3d8.99466811431762!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x164b870056fb0d55%3A0xdc78c20667ae5638!2sTade%20coffee%20export!5e1!3m2!1sen!2set!4v1744445036071!5m2!1sen!2set"
           width="100%"
-          height="400"
-          style={{ border: 0 }}
+          height="450"
+          style={{ border: 0,}}
           allowFullScreen
           loading="lazy"
         ></iframe>
+        </div>
       </div>
     </>
   );

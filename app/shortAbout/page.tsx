@@ -5,6 +5,7 @@ import { LiaShipSolid } from "react-icons/lia";
 import { PiCoffeeBeanLight } from "react-icons/pi";
 import { GiEarthAmerica } from "react-icons/gi";
 import { PiPhoneIncomingThin } from "react-icons/pi";
+import Image from "next/image";
 
 function ShortAbout() {
   return (
@@ -18,9 +19,12 @@ function ShortAbout() {
             viewport={{ once: true }}
             className="max-w-lg"
           >
-            <img
-              src="./images/coffee-farm.png"
-              alt=""  
+            <Image
+              src="/images/coffee-farm.png"
+              alt="coffee"  
+              width={500}
+              height={500}
+              loading="lazy"
               className="w-full h-full object-cover"
             />
           </motion.div>
@@ -35,7 +39,7 @@ function ShortAbout() {
             <p className="aboutCompanyP">
               About Company
             </p>
-            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold max-w-xl">
+            <h1 className="text-3xl lg:text-4xl font-bold max-w-xl">
               Mastering Nurture In Coffee
               Production
             </h1>
@@ -82,7 +86,7 @@ function ShortAbout() {
                   <PiPhoneIncomingThin className="aboutUsIcon"/>
                   <div className="aboutUsCard">
                       <p className="text-gray-500 text-sm md:text-base font-medium">Phone : </p>
-                      <h2 className="text-base md:text-xl font-semibold">+251 911828573</h2>
+                      <h2 className="text-base md:text-lg font-semibold">+251 911828573</h2>
                   </div>
               </div>
             </div>

@@ -13,15 +13,15 @@ function OurSites() {
       <div className="underlineForTitle"></div>
 
       <div className="flex items-center justify-between w-full flex-col md:flex-row p-4 mt-14">
-        <div className="flex text-left gap-5 items-start justify-center flex-col mb-10">
-          <h1 className="text-3xl md:text-4xl lg:text-5xl font-semibold">
+        <div className="flex text-left gap-5 items-start justify-center flex-col mb-10 pr-4">
+          <h1 className="text-2xl md:text-3xl font-medium">
             Discover Our Coffee Source
           </h1>
-          <p className="max-w-sm text-sm lg:text-base">
+          <p className="max-w-sm text-sm ">
           Sidama Nensebo is one of the largest coffee producers and exporter in the oromia region , we located in west arsi nensebo , a region renowned for its rich soil, perfect altitude, and perfect climate for growing world-class coffee. We provide best quality coffee that processed over 10 stations
           </p>
           <Link href={"/oursites"}>
-            <button className="bg-green-800 cursor-pointer px-4 font-medium py-2 hover:bg-green-700 text-white rounded-md transition ease-in duration-300">
+            <button className="bg-green-800 cursor-pointer px-4 text-sm font-medium py-2 hover:bg-green-700 text-white rounded-md transition ease-in duration-300">
               View All
             </button>
           </Link>
