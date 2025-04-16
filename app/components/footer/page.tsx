@@ -93,7 +93,7 @@ function Footer() {
         </div>
       </div>
     </div>
-    <hr className="text-gray-200 p-2 max-w-[1200px] mx-auto"/>
+    <hr className="text-gray-200 p-2 max-w-[1150px] mx-auto"/>
     <div className="text-white py-3 text-xs md:text-sm text-center">Copyright © 2025. All right reserved. Sidama Nensebo</div>
     </div>
   );

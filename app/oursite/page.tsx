@@ -29,7 +29,7 @@ function OurSites() {
 
         <div className="flex items-center justify-around gap-5 flex-col md:flex-row w-full h-full mt-10">
           {OurSite.length > 0 &&
-            OurSite.slice(0, 3).map((data) => (
+            [OurSite["1"], OurSite["4"], OurSite["3"]].map((data) => (
               <div
                 key={data.id}
                 className="overflow-hidden max-w-[500px] lg:max-w-[300px]"

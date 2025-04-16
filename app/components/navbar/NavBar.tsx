@@ -35,6 +35,7 @@ function NavBar() {
       </>
     );
   }
+  
   useEffect(() => {
     function changeHeader() {
       if (window.scrollY >= 90) {

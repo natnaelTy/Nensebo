@@ -5,6 +5,8 @@ import { motion } from "framer-motion";
 import "./index.css";
 import data from "./ImagesData";
 import Image from "next/image";
+import Head from "next/head";
+
 
 export default function Home() {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -22,6 +24,7 @@ export default function Home() {
 
   return (
     <>
+     <Head>Home</Head>
       <div className="home relative">
         <div className="flex flex-col md:flex-row items-center justify-around min-h-screen pt-30 md:pt-0 w-full">
           <motion.div
