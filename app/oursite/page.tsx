@@ -3,6 +3,8 @@ import Image from "next/image";
 import OurSite from "./data";
 import Link from "next/link";
 import { MdPushPin } from "react-icons/md";
+import { GoArrowRight } from "react-icons/go";
+
 
 function OurSites() {
   return (
@@ -53,7 +55,7 @@ function OurSites() {
                   <p className="siteDescription">{data.shortDescription}</p>
                   <Link href={`/oursites/${data.id}`}>
                     <button className="procesesBtn">
-                      {data.btn}
+                      {data.btn} <GoArrowRight className="text-xl"/>
                     </button>
                   </Link>
                 </div>
