@@ -16,9 +16,9 @@ import { RiArrowRightDoubleFill } from "react-icons/ri";
 import Link from "next/link";
 
 async function SiteDetail({ params }: {params : Promise<{oursitesId: string}>}) {
-   
-    const  oursitesId  = (await params).oursitesId;
-    
+
+    const { oursitesId } = await params;
+
     const site =  OurSite.find((s) => s.id.toString() ===  oursitesId);
 
     if (!site) return notFound();

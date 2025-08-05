@@ -16,11 +16,11 @@ function Footer() {
       <div className="flex items-start flex-col justify-start">
         <div className="w-full flex items-center justify-start p-2">
           <Image
-            src="/images/coffeelogo.png"
+            src="/favicon.ico"
             alt="logo"
-            className="w-[70px] object-cover mb-6"
-            width={70}
-            height={70}
+            className="w-[70px] h-auto object-cover mb-6"
+            width={'60'}
+            height={"60"}
           />
           <h1 className="text-lg md:text-xl font-semibold">Sidama Nensebo</h1>
         </div>

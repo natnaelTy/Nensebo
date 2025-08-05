@@ -62,7 +62,7 @@ function NavBar() {
           <div className="flex items-center justify-center gap-1">
             <div className="relative max-w-[65px] p-2 h-[65px]">
               <Image
-                src="/images/coffeelogo.png"
+                src="/favicon.ico"
                 alt="logo"
                 width={65}
                 height={65}

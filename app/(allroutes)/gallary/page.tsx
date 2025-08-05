@@ -56,8 +56,8 @@ function Gallary() {
                 onClick={showFullImage}
                 src={img.image}
                 alt="image"
-                width={300}
-                height={300}
+                width={"300"}
+                height={"300"}
                 className="w-full h-full object-cover hover:scale-110 transition-all ease-in"
                 loading="lazy"
               />
