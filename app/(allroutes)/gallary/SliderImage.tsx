@@ -1,3 +1,4 @@
+"use client"
 import { MdOutlineArrowForwardIos } from "react-icons/md";
 import { MdOutlineArrowBackIosNew } from "react-icons/md";
 import images from "./Image";
