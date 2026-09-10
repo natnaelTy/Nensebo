@@ -1,106 +1,215 @@
 "use client";
-import "./index.css";
-import Link from "next/link";
-import { RiArrowRightDoubleFill } from "react-icons/ri";
+import { motion } from "framer-motion";
 import Image from "next/image";
-import Head from "next/head";
+import CommonBanner from "../CommenBanner";
+import Link from "next/link";
 
-function About() {
+const timeline = [
+  {
+    year: "2008",
+    title: "Founded",
+    desc: "Tade Coffee was established with a mission to bring the highlands' finest beans to the world.",
+  },
+  {
+    year: "2012",
+    title: "First International Export",
+    desc: "Our first container was shipped to a specialty roaster in Japan — the beginning of our global journey.",
+  },
+  {
+    year: "2016",
+    title: "Direct Trade Partnerships",
+    desc: "We formalized direct partnerships with over 500 farming families, ensuring fair prices and traceability.",
+  },
+  {
+    year: "2019",
+    title: "Anaerobic Processing Introduced",
+    desc: "Invested in anaerobic fermentation infrastructure to diversify our processing catalog.",
+  },
+  {
+    year: "2022",
+    title: "12 Countries Reached",
+    desc: "Nensebo coffees now reach roasters across Asia, Europe, and the Americas.",
+  },
+  {
+    year: "Today",
+    title: "Growing Together",
+    desc: "2,000+ farming families, 500+ tons exported annually, with a commitment to continuous improvement.",
+  },
+];
+
+const values = [
+  {
+    icon: "🌱",
+    title: "Farmer First",
+    desc: "Every decision begins with the wellbeing of the farming families who grow our coffee.",
+  },
+  {
+    icon: "🔍",
+    title: "Radical Transparency",
+    desc: "Full traceability from GPS-mapped farms to export documentation.",
+  },
+  {
+    icon: "☕",
+    title: "Quality Obsession",
+    desc: "Every lot is cup-scored and rejected if it doesn't meet our 84+ SCA standard.",
+  },
+  {
+    icon: "🌍",
+    title: "Sustainable Futures",
+    desc: "Shade-grown, organic-forward farming that protects the West Arsi ecosystem.",
+  },
+];
+
+export default function AboutPage() {
   return (
-    <>
-     <Head>About Us</Head>
-      {/* common banner photo */}
-        <div className="bannerContainer">
-          <div className="nestedBannerContainer">
-            <Link href={"/"} className="hover:text-green-800">
-              <h2>Home</h2>
-            </Link>
-            <h2>
-              <RiArrowRightDoubleFill />
+    <div className="bg-background">
+      <CommonBanner title="Our Story" subtitle="About Tade" />
+
+      {/* Mission section */}
+      <section className="py-24 lg:py-32">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid lg:grid-cols-2 gap-16 xl:gap-24 items-center">
+            <motion.div
+              initial={{ opacity: 0, x: -40 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.7 }}
+            >
+              <span className="inline-block px-4 py-1.5 bg-secondary text-primary text-xs font-semibold rounded-full uppercase tracking-widest mb-6">
+                Who We Are
+              </span>
+              <h2 className="font-display text-4xl lg:text-5xl font-bold text-foreground leading-tight mb-6">
+                Rooted in West Arsi,
+                <br />
+                <span className="text-primary italic">Reaching the World</span>
+              </h2>
+              <p className="text-muted-foreground text-lg leading-relaxed mb-6">
+                Tade Coffee is an Ethiopian specialty coffee export company
+                born from a belief that the world deserves to taste the
+                extraordinary coffees growing in the Nensebo highlands — and
+                that the farmers who grow them deserve recognition and fair
+                reward.
+              </p>
+              <p className="text-muted-foreground leading-relaxed mb-8">
+                We operate our own washing stations and drying beds, work
+                directly with smallholder farmers, and maintain rigorous quality
+                standards at every step. The result: coffees with a story,
+                flavor, and provenance that sets them apart in any cupping.
+              </p>
+              <Link
+                href="/contact"
+                className="inline-flex items-center gap-2.5 px-7 py-3.5 bg-primary text-primary-foreground rounded-full font-semibold text-sm hover:bg-primary/90 transition-all duration-200 shadow-md"
+              >
+                Partner with Us
+                <svg width="16" height="16" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24">
+                  <path d="M5 12h14M12 5l7 7-7 7" />
+                </svg>
+              </Link>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, x: 40 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.7, delay: 0.15 }}
+              className="relative"
+            >
+              <div className="grid grid-cols-2 gap-4">
+                <div className="relative h-64 rounded-2xl overflow-hidden bg-muted">
+                  <Image src="/images/onsite.jpg" alt="Coffee farm" fill className="object-cover" />
+                </div>
+                <div className="relative h-64 mt-8 rounded-2xl overflow-hidden bg-muted">
+                  <Image src="/images/coffeeSite2.JPG" alt="Processing station" fill className="object-cover" />
+                </div>
+                <div className="relative h-48 rounded-2xl overflow-hidden bg-muted">
+                  <Image src="/images/dried.jpg" alt="Drying beds" fill className="object-cover" />
+                </div>
+                <div className="relative h-48 -mt-8 rounded-2xl overflow-hidden bg-muted">
+                  <Image src="/images/coffeeplant.png" alt="Coffee plant" fill className="object-cover" />
+                </div>
+              </div>
+            </motion.div>
+          </div>
+        </div>
+      </section>
+
+      {/* Values */}
+      <section className="py-16 bg-secondary/50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="font-display text-3xl lg:text-4xl font-bold text-foreground">
+              Our Core Values
             </h2>
-            <h2>About</h2>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            {values.map((v, i) => (
+              <motion.div
+                key={v.title}
+                initial={{ opacity: 0, y: 24 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: i * 0.1 }}
+                className="bg-card rounded-2xl p-6 border border-border hover:shadow-md transition-shadow"
+              >
+                <span className="text-4xl block mb-4">{v.icon}</span>
+                <h3 className="font-display font-semibold text-lg text-foreground mb-2">
+                  {v.title}
+                </h3>
+                <p className="text-muted-foreground text-sm leading-relaxed">
+                  {v.desc}
+                </p>
+              </motion.div>
+            ))}
           </div>
         </div>
+      </section>
 
-      <div className="flex flex-col items-center justify-center gap-16 p-4">
-         {/* title */}
-       <h1 className="text-2xl lg:text-3xl text-center text-green-900 font-bold mt-10 mb-10">
-        About <span className="text-gray-900 font-extralight">Us</span>
-        <div className="underlineForTitle"></div>
-      </h1>
-        
-        <div className="max-w-[1200px] w-full">
-          <Image
-            src="/images/homepic.jpg"
-            alt="coffee"
-            width={1200}
-            height={300}
-            loading="lazy"
-            className="w-full h-[170px] md:h-[300px] object-cover rounded-lg"
-          />
-        </div>
+      {/* Timeline */}
+      <section className="py-24 lg:py-32">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <span className="inline-block px-4 py-1.5 bg-secondary text-primary text-xs font-semibold rounded-full uppercase tracking-widest mb-4">
+              Our Journey
+            </span>
+            <h2 className="font-display text-4xl font-bold text-foreground">
+              Milestones That Shaped Us
+            </h2>
+          </div>
 
-        <div className="flex flex-col items-start justify-center p-4 md:p-8 gap-5 max-w-[1200px] w-full inset-shadow-2xs shadow-lg rounded-lg bg-gray-50">
-          <p className="text-2xl mb-6 md:text-4xl lg:text-5xl font-bold text-green-900 uppercase">
-            About our company
-          </p>
-          <h3 className="h3Title">
-            INTRODUCTION
-          </h3>
-          <p className="aboutDescription">
-            Nensebo speciality Coffee Export is a green Arabica coffee exporter
-            company based in <span className="underline decoration-sky-500">Ethiopia</span> specializing in the export of   
-            <span className="underline decoration-pink-500"> premium Arabica</span> coffee beans. We work directly with local farmers to source
-            the best quality beans, ensuring fair prices and sustainable
-            practices. Our team is passionate about coffee and dedicated to show
-            casing the unique flavors and characteristics of Arabica beans to
-            coffee lovers around the world honestly.
-          </p>
-          <h3 className="h3Title">
-            OUR VISION
-          </h3>
-          <p className="aboutDescription">
-            Our vision is to become a leading exporter of Arabica coffee from
-            Ethiopia, known for our commitment to quality, sustainability, and
-            community development. We dream of a future where nensebo speciality
-            Coffee Export is known everywhere for <span className="underline decoration-indigo-500">trust and quality.</span> We want to
-            bring positive changes to the coffee industry, both locally and
-            globally. By being innovative, ethical, and focusing on you, we hope
-            to create a sustainable and successful future for our company and
-            the communities we work with. We aim to build long term
-            <span className="underline decoration-pink-500"> relationships</span> with our clients and partners, while also making a
-            positive impact on the lives of local farmers and communities.
-            Ultimately, we strive to be a trusted source for premium Arabica
-            coffee beans that are enjoyed by coffee enthusiasts worldwide.
-          </p>
-          <h3 className="h3Title">OUR MISSION</h3>
-          <p className="aboutDescription">
-            To be a leader worldwide in sharing the amazing products from
-            Ethiopia. We want to support local communities, be good to the
-            environment, and offer you a <span className="underline decoration-sky-500">variety of excellent goods.</span> We aim to
-            do business responsibly, making a positive impact in the coffee and
-            agriculture sectors while making sure {`you're`} happy with what we
-            provide. To promote and export {`high-quality`} Arabica coffee beans
-            from Ethiopia to <span className="underline decoration-indigo-500">international markets</span>, while supporting local
-            farmers and communities in orphan school aid and other in the
-            region.
-          </p>
-          <div>
-              <h3 className="h3Title">CORE VALUES</h3>
-              <ul className="list-disc px-8 py-4 flex flex-col items-start gap-5">
-                <li className="aboutDescription"><span className="aboutSpan">Excellence:</span> We will be committed to meeting the highest quality standards while always challenging ourselves to the highest levels of learning and performance.</li>
+          <div className="relative">
+            {/* Timeline line */}
+            <div className="absolute left-8 top-0 bottom-0 w-px bg-border" />
 
-                <li className="aboutDescription"><span className="aboutSpan">Accountability:</span> We accept individual and team responsibilities and follow through on our commitments. In all of our decisions and actions, we accept responsibility for our performance.</li>
+            <div className="space-y-10">
+              {timeline.map((item, i) => (
+                <motion.div
+                  key={item.year}
+                  initial={{ opacity: 0, x: -30 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  viewport={{ once: true, margin: "-60px" }}
+                  transition={{ duration: 0.5, delay: i * 0.08 }}
+                  className="relative flex gap-8 pl-16"
+                >
+                  {/* Dot */}
+                  <div className="absolute left-6 top-1.5 w-4 h-4 rounded-full border-2 border-primary bg-background" />
 
-                <li className="aboutDescription"><span className="aboutSpan">Quality:</span> We are committed to producing the highest quality product in the industry.</li>
-
-                <li className="aboutDescription"><span className="aboutSpan">Professionalism:</span> Throughout, we strive to fulfill our responsibilities to the highest possible standards.</li>
-              </ul>
+                  <div>
+                    <span className="inline-block px-3 py-0.5 rounded-full bg-primary/10 text-primary text-xs font-bold mb-2">
+                      {item.year}
+                    </span>
+                    <h3 className="font-display font-semibold text-xl text-foreground mb-1">
+                      {item.title}
+                    </h3>
+                    <p className="text-muted-foreground text-sm leading-relaxed">
+                      {item.desc}
+                    </p>
+                  </div>
+                </motion.div>
+              ))}
+            </div>
           </div>
         </div>
-      </div>
-    </>
+      </section>
+    </div>
   );
 }
-
-export default About;

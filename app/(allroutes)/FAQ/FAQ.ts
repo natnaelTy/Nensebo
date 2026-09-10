@@ -9,7 +9,7 @@ const data = <DataTypes[]> [
     {
         id: 0,
         question: 'How can i buy green coffee?',
-        answer: 'First we recommend trying out a free 200g sample of each coffee you may be interested in. Once you are sure of your selection, you can contact us at sidamanensebo@gmail.com.'
+        answer: 'First we recommend trying out a free 200g sample of each coffee you may be interested in. Once you are sure of your selection, you can contact us at tadecoffee@gmail.com.'
     },
     {
         id: 1,
@@ -33,7 +33,7 @@ const data = <DataTypes[]> [
     },
     {
         id: 5,
-        question: 'What certifications do Sidama nensebo coffee beans have?',
+        question: 'What certifications do Tade coffee beans have?',
         answer: 'Our coffee is certified Rainforest Alliance ensuring ethical and sustainable practices in farming and export..'
     },
     {

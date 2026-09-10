@@ -1,184 +1,76 @@
 @import "tailwindcss";
-@import 'swiper/css';
+@import "swiper/css";
+@import "swiper/css/effect-fade";
 
+@theme {
+  --color-background: #fdf8f2;
+  --color-foreground: #1a1208;
+  --color-card: #ffffff;
+  --color-card-foreground: #1a1208;
+  --color-primary: #00531d;
+  --color-primary-foreground: #fdf8f2;
+  --color-secondary: #f0ebe3;
+  --color-secondary-foreground: #3d2b1f;
+  --color-muted: #e8e0d5;
+  --color-muted-foreground: #6b5744;
+  --color-accent: #c8a96e;
+  --color-accent-foreground: #1a1208;
+  --color-border: #d6ccc0;
+  --color-ring: #00531d;
+  --font-sans: var(--font-inter, "Inter", sans-serif);
+  --font-display: var(--font-fraunces, "Source Serif 4", serif);
+  --radius: 0.625rem;
+}
 
 * {
-  -webkit-font-smoothing: auto;
+  -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
 }
-/* reuseble class */
 
-@layer utilities {
-  /* nav bar */
-  .liList {
-    @apply font-medium border-3 border-l-green-600 border-white pl-4 p-2;
-  }
-   .primarybtn {
-    @apply bg-transparent text-white font-bold border-2 border-white px-4 py-3 text-sm rounded-lg uppercase mt-8 hover:bg-white hover:text-black z-10 transition duration-300 ease-in;
-   }
-  /* about us in short */
-  .aboutCompanyP {
-    @apply text-sm lg:text-base font-medium text-green-700 bg-green-100 px-6 py-2 rounded-full;
-  }
-  .aboutUsCard {
-    @apply flex flex-col items-start;
-  }
-  .aboutUsIcon {
-    @apply text-green-800 text-5xl mb-2 bg-green-100 rounded-full p-2;
-  }
-  .aboutUsH1Tag {
-    @apply text-sm font-semibold max-w-xs;
-  }
-  .learnMoreBtn {
-    @apply px-4 font-medium py-2 bg-green-900 text-white rounded-md hover:bg-green-700 transition duration-300 ease-in;
-  }
-  /* why choose us */
-  .whyChooseUsContainer {
-    @apply flex items-center justify-around flex-col lg:flex-row w-full p-4 md:p-6 lg:p-16 gap-12 md:gap-5;
-  }
-  .whyChooseUsCard {
-    @apply flex flex-col items-center justify-center text-center gap-4 bg-[#000000b7] max-w-[350px] h-[280px] md:h-[350px] w-full rounded-xl;
-  }
-  .whyChooseUsH1 {
-    @apply text-white text-2xl md:text-3xl font-bold;
-  }
-  .whyChooseUs_P {
-    @apply max-w-xs text-gray-200 text-base;
-  }
-  .whyChooseUsTitle {
-    @apply absolute top-28 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-2xl md:text-3xl lg:text-4xl font-semibold text-center;
-  }
-  /* about detail */
-  .h3Title {
-    @apply text-xl md:text-2xl lg:text-3xl font-medium;
-  }
-  .aboutDescription {
-    @apply text-gray-700 text-gray-600 md:text-base;
-  }
-  .aboutSpan {
-    @apply font-semibold text-lg md:text-xl text-slate-800;
-  }
-  /* what we offer component*/
-.WhatWeOfferCard {
-  @apply flex flex-col items-center justify-between shadow-xl hover:shadow-2xl rounded-xl max-w-[360px] h-[760px] m-auto overflow-hidden bg-white;
-}
-.WhatWeOfferCardImage {
-  @apply object-cover w-full rounded-t-xl h-64 transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110;
-}
-.WhatWeOfferTitle {
-  @apply text-2xl lg:text-3xl font-medium text-green-800 mt-5;
-}
-.WhatWeOfferDescription {
-  @apply text-sm md:text-base text-gray-800 p-7 flex-grow;
+body {
+  background-color: #fdf8f2;
+  color: #1a1208;
 }
 
-/* our site component */
-.infoBox {
-  @apply flex items-center justify-between w-full p-3 border-b-1 border-gray-600;
+::-webkit-scrollbar {
+  width: 5px;
 }
-.text_icon {
-  @apply flex items-center justify-center gap-1 text-gray-700 text-sm font-medium;
+::-webkit-scrollbar-track {
+  background: transparent;
 }
-.imageContainer {
-  @apply w-full h-full flex items-center flex-wrap justify-center relative overflow-hidden shadow-2xl;
+::-webkit-scrollbar-thumb {
+  background: #d6ccc0;
+  border-radius: 3px;
 }
-.siteName {
-  @apply text-lg font-semibold text-green-950 md:text-xl z-10;
+::-webkit-scrollbar-thumb:hover {
+  background: #b0a090;
 }
-.siteDescription {
-  @apply max-w-[300px] text-xs text-gray-800;
-}
-.siteImage {
-  @apply w-full h-full object-cover rounded-lg;
-}
-.procesesTitle {
-  @apply text-xl lg:text-2xl text-center bg-green-900 max-w-[1180px] px-8 rounded-xl m-auto py-2 text-white mt-8 ;
-}
-.procesesContainer {
-  @apply flex items-center justify-evenly gap-5 flex-wrap w-full h-full mt-10 p-4;
-}
-.contentContainer {
-  @apply flex items-start text-left flex-col p-3 gap-4 bg-gray-50 h-[280px];
-}
-.icon {
-  @apply text-sm font-medium text-gray-600 flex items-center gap-2;
-}
-.procesesP {
-  @apply px-3 py-1 bg-gray-200 text-green-900 rounded-full text-xs font-semibold;
-}
-.procesesBtn {
-  @apply underline hover:text-green-600 text-green-800 flex items-center gap-2 font-medium flex items-center gap-2 px-3 py-2 text-sm mt-2 cursor-pointer;
-}
-.titleDecoration::before {
-  content: "";
-  background-color: #00531d;
-  width: 300px;
-  height: 4px;
-  position: absolute;
-  border-radius: 30px;
-  left: 30%;
-  top: 50%;
-}
-@media only screen and  (max-width: 768px){
-  .titleDecoration::before {
-    width: 100px;
-    top: 100%;
-    left: 5%;
-    margin-top: 5px;
-    height: 3px;
+
+/* Hero text reveal — plays on load and replays when the keyed block remounts on slide change */
+@keyframes hero-rise {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
-/* footer */
-.LinkBox {
-  @apply flex items-start justify-center flex-col;
-}
-.footerHeaderText {
-  @apply text-xl md:text-2xl font-semibold mb-5;
-}
-.unorderList {
-  @apply flex flex-col gap-4 items-start;
-}
-.footerContactCard {
-  @apply flex gap-4 items-center justify-start;
+.hero-rise {
+  animation: hero-rise 0.7s cubic-bezier(0.22, 1, 0.36, 1) both;
 }
 
-/* gallary component */
-.arrow {
-  @apply absolute text-white top-[48%] bg-[#000000c6] hover:bg-[#000000e0] p-5 cursor-pointer rounded-full text-2xl;
+/* Hero scroll-cue bounce */
+@keyframes hero-bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10px);
+  }
 }
-.arrowLeft {
-  @apply left-5;
-}
-.arrowRight {
-  @apply right-5;
-}
-.circle-indicator {
-  @apply absolute bottom-3 flex gap-2 justify-center items-center;
-}
-.current-indicator {
-  @apply bg-white w-[25px] lg:w-[30px] h-[7px] lg:h-[8px] rounded-full border-none transition duration-300 ease-in;
-}
-.hide-indicator {
-  @apply bg-gray-600 w-[7px] lg:w-[8px] h-[7px] lg:h-[8px];
-}
-
-/* benner component */
-.bannerContainer {
-  @apply absolute top-42 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10;
-}
-.nestedBannerContainer {
-  @apply flex items-center justify-around text-white text-lg lg:text-xl font-semibold gap-2;
-}
-.underlineForTitle::before{
-    content: '';
-    width: 40px;
-    height: 3px;
-    background-color: #00531d;
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    border-radius: 6px;
-    margin-top: 5px;
-}
-
+.hero-bounce {
+  animation: hero-bounce 1.8s ease-in-out 1.8s infinite;
 }
