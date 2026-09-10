@@ -1,16 +1,15 @@
 import type { Metadata } from "next";
-import { Inter, Source_Serif_4 } from "next/font/google";
+import { Source_Serif_4 } from "next/font/google";
 import "./globals.css";
 import NavBar from "./components/navbar/NavBar";
 import Footer from "./components/footer/page";
 import favicon from "../public/images/tadecoffeelogo-no-bg.png";
 
-
-const inter = Inter({
-  variable: "--font-inter",
-  subsets: ["latin"],
-  display: "swap",
-});
+export const metadata: Metadata = {
+  title: "Tade Coffee",
+  description:
+    "Premium single-origin specialty coffee from the West Arsi highlands of Oromia, Ethiopia — traceable from farm to cup.",
+};
 
 const sourceSerif = Source_Serif_4({
   variable: "--font-fraunces",
@@ -18,12 +17,7 @@ const sourceSerif = Source_Serif_4({
   style: ["normal", "italic"],
   display: "swap",
 });
-
-export const metadata: Metadata = {
-  title: "Tade Coffee",
-  description:
-    "Premium single-origin specialty coffee from the West Arsi highlands of Oromia, Ethiopia — traceable from farm to cup.",
-};
+export { sourceSerif };
 
 export default function RootLayout({
   children,

@@ -20,7 +20,7 @@ export default function Hero() {
   const [activeIndex, setActiveIndex] = useState(0);
 
   const active: SlideContent =
-    (images as any[])[activeIndex] ?? (images as any[])[0];
+    (images as unknown as SlideContent[])[activeIndex] ?? (images as unknown as SlideContent[])[0];
 
   return (
     <section className="relative h-screen w-full overflow-hidden">
@@ -48,7 +48,7 @@ export default function Hero() {
           }
         }}
       >
-        {(images as any[]).map((img: any, i: number) => {
+        {(images as unknown as { imageUrl?: string; src?: string; image?: string; url?: string; alt?: string; title?: string }[]).map((img, i: number) => {
           const src =
             typeof img === "string"
               ? img
@@ -142,8 +142,7 @@ export default function Hero() {
       </div>
 
       {/* Slide indicators (01 / 02 / 03) */}
-      <div className="absolute right-12 top-1/2 -translate-y-1/2 z-20 hidden sm:flex flex-col items-end gap-5">
-        {(images as any[]).map((_, i) => {
+      <div className="absolute right-12 top-1/2 -translate-y-1/2 z-20 hidden sm:flex flex-col items-end gap-5">                {(images as readonly SlideContent[]).map((_, i: number) => {
           const isActive = activeIndex === i;
           return (
             <button

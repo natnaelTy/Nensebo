@@ -6,7 +6,7 @@ import data from "./data";
 import { Badge } from "@/components/ui/badge";
 
 export default function OurSitesPreview() {
-  const sites = (data as any[]).slice(0, 4);
+  const sites = (data as Array<{ name?: string; siteName?: string; title?: string; description?: string; desc?: string; about?: string; image?: string; img?: string; coverImage?: string; imageUrl?: string; images?: string[]; location?: string; woreda?: string; area?: string; processes?: string[]; process?: string[]; id?: string | number; _id?: string | number }>).slice(0, 4);
 
   return (
     <section className="py-24 lg:py-32 bg-secondary/40">
@@ -34,7 +34,7 @@ export default function OurSitesPreview() {
 
         {/* Bento grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 auto-rows-[320px]">
-          {sites.map((site: any, i: number) => {
+          {sites.map((site, i: number) => {
             const name = site.name || site.siteName || site.title || `Site ${i + 1}`;
             const desc = site.description || site.desc || site.about || "";
             const img = site.image || site.img || site.coverImage || site.imageUrl || site.images?.[0] || "/images/coffeeSite.JPG";

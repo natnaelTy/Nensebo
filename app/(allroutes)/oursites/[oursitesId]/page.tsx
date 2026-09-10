@@ -5,7 +5,6 @@ import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import OurSite from "../data";
-import { Badge } from "@/components/ui/badge";
 
 const processIcons: Record<string, { icon: string; label: string; color: string }> = {
   "washing station": { icon: "💧", label: "Washed", color: "bg-blue-50 text-blue-700 border-blue-200" },

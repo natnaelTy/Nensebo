@@ -7,7 +7,7 @@ import { Badge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";
 
 export default function WhatWeOffer() {
-  const offers = data as any[];
+  const offers = data as Array<{ title?: string; name?: string; processType?: string; description?: string; desc?: string; about?: string; image?: string; img?: string; coverImage?: string; imageUrl?: string; process?: string; processLabel?: string; type?: string; tags?: string[]; features?: string[]; notes?: string[] }>;
 
   return (
     <section className="py-24 lg:py-32 bg-background">
@@ -33,8 +33,7 @@ export default function WhatWeOffer() {
         </motion.div>
 
         {/* Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7">
-          {offers.map((offer: any, i: number) => {
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7">            {offers.map((offer, i: number) => {
             const title =
               offer.title || offer.name || offer.processType || `Offering ${i + 1}`;
             const desc =

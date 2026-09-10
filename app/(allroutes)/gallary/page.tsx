@@ -12,6 +12,7 @@ export default function GalleryPage() {
   const [activeCategory, setActiveCategory] = useState("All");
 
   const allImages = images as Array<{ src?: string; image?: string; url?: string; alt?: string; title?: string } | string>;
+  type ArrayItem = Extract<typeof allImages[number], { src?: string; image?: string; url?: string; alt?: string; title?: string }>;
 
   return (
     <div className="bg-background">
@@ -59,9 +60,9 @@ export default function GalleryPage() {
               const src =
                 typeof img === "string"
                   ? `/images/${img}`
-                  : (img as any).src || (img as any).image || (img as any).url || `/images/site${(i % 7) + 1}.jpg`;
+                  : (img as ArrayItem).src || (img as ArrayItem).image || (img as ArrayItem).url || `/images/site${(i % 7) + 1}.jpg`;
               const alt =
-                typeof img === "string" ? img : (img as any).alt || (img as any).title || "Tade coffee";
+                typeof img === "string" ? img : (img as ArrayItem).alt || (img as ArrayItem).title || "Tade coffee";
 
               return (
                 <motion.div
