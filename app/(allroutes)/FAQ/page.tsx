@@ -6,7 +6,7 @@ import faqData from "./FAQ";
 
 export default function FAQPage() {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
-  const faqs: Array<{ question?: string; q?: string; title?: string; answer?: string; a?: string; content?: string }> = faqData as any;
+  const faqs = faqData as Array<{ question?: string; q?: string; title?: string; answer?: string; a?: string; content?: string }>;
 
   return (
     <div className="bg-background">

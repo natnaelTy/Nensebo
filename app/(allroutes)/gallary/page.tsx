@@ -11,7 +11,7 @@ export default function GalleryPage() {
   const [selected, setSelected] = useState<string | null>(null);
   const [activeCategory, setActiveCategory] = useState("All");
 
-  const allImages: Array<{ src?: string; image?: string; url?: string; alt?: string; title?: string } | string> = images as any;
+  const allImages = images as Array<{ src?: string; image?: string; url?: string; alt?: string; title?: string } | string>;
 
   return (
     <div className="bg-background">
