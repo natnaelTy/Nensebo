@@ -6,7 +6,7 @@ import faqData from "./FAQ";
 
 export default function FAQPage() {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
-  const faqs = faqData as any[];
+  const faqs: Array<{ question?: string; q?: string; title?: string; answer?: string; a?: string; content?: string }> = faqData as any;
 
   return (
     <div className="bg-background">
@@ -39,7 +39,7 @@ export default function FAQPage() {
 
           {/* Accordion */}
           <div className="space-y-3">
-            {faqs.map((item: any, i: number) => {
+            {faqs.map((item, i: number) => {
               const question =
                 item.question || item.q || item.title || `Question ${i + 1}`;
               const answer = item.answer || item.a || item.content || "";

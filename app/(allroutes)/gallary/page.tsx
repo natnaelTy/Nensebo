@@ -11,7 +11,7 @@ export default function GalleryPage() {
   const [selected, setSelected] = useState<string | null>(null);
   const [activeCategory, setActiveCategory] = useState("All");
 
-  const allImages = images as any[];
+  const allImages: Array<{ src?: string; image?: string; url?: string; alt?: string; title?: string } | string> = images as any;
 
   return (
     <div className="bg-background">
@@ -55,13 +55,13 @@ export default function GalleryPage() {
 
           {/* Masonry grid */}
           <div className="columns-1 sm:columns-2 lg:columns-3 xl:columns-4 gap-4 space-y-4">
-            {allImages.map((img: any, i: number) => {
+            {allImages.map((img, i: number) => {
               const src =
                 typeof img === "string"
                   ? `/images/${img}`
-                  : img.src || img.image || img.url || `/images/site${(i % 7) + 1}.jpg`;
+                  : (img as any).src || (img as any).image || (img as any).url || `/images/site${(i % 7) + 1}.jpg`;
               const alt =
-                typeof img === "string" ? img : img.alt || img.title || "Tade coffee";
+                typeof img === "string" ? img : (img as any).alt || (img as any).title || "Tade coffee";
 
               return (
                 <motion.div
