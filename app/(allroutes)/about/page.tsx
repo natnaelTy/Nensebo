@@ -124,8 +124,8 @@ export default function AboutPage() {
                 <div className="relative h-48 rounded-2xl overflow-hidden bg-muted">
                   <Image src="/images/dried.jpg" alt="Drying beds" fill className="object-cover" />
                 </div>
-                <div className="relative h-48 -mt-8 rounded-2xl overflow-hidden bg-muted">
-                  <Image src="/images/coffeeplant.png" alt="Coffee plant" fill className="object-cover" />
+                <div className="relative h-48 -mt-8 rounded-2xl overflow-hidden bg-muted mt-6">
+                  <Image src="/images/tadepic5.jpg" alt="Tade coffee" fill className="object-cover" />
                 </div>
               </div>
             </motion.div>
