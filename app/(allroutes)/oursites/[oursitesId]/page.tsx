@@ -90,14 +90,6 @@ export default function SiteDetailPage({
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.7 }}
               >
-                {/* Process badge */}
-                <span
-                  className={`inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold border mb-4 ${process.color}`}
-                >
-                  <span>{process.icon}</span>
-                  {process.label}
-                </span>
-
                 <h1 className="font-display text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-tight mb-3">
                   {site.siteName}
                 </h1>
