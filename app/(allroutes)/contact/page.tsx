@@ -33,7 +33,7 @@ const contactDetails = [
       </svg>
     ),
     label: "Phone",
-    value: "+251 912 345 678",
+    value: "+251911828573",
   },
 ];
 
