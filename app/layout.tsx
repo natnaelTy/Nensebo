@@ -3,7 +3,6 @@ import { Source_Serif_4 } from "next/font/google";
 import "./globals.css";
 import NavBar from "./components/navbar/NavBar";
 import Footer from "./components/footer/Footer";
-import favicon from "../public/images/tadecoffeelogo.png";
 import { SITE_URL, SITE_NAME, SITE_DESCRIPTION } from "@/lib/site";
 
 // Base image for OpenGraph/Twitter social previews
@@ -69,10 +68,7 @@ export const metadata: Metadata = {
       : undefined,
   },
   icons: {
-    icon: [
-      { url: "/favicon.png", type: "image/png" },
-      { url: favicon.src, type: "image/png" },
-    ],
+    icon: [{ url: "/favicon.png", type: "image/png" }],
   },
 };
 
@@ -89,9 +85,6 @@ export default function RootLayout({
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <head>
-        <link rel="icon" type="image/png" href="/favicon.png" key="favicon-static" />
-      </head>
       <body>
         <NavBar />
         {children}
