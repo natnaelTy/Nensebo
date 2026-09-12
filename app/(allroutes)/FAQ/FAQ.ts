@@ -8,7 +8,7 @@ interface DataTypes {
 const data = <DataTypes[]> [
     {
         id: 0,
-        question: 'How can i buy green coffee?',
+        question: 'How can I buy green coffee?',
         answer: 'First we recommend trying out a free 200g sample of each coffee you may be interested in. Once you are sure of your selection, you can contact us at tadecoffee@gmail.com.'
     },
     {
@@ -38,18 +38,18 @@ const data = <DataTypes[]> [
     },
     {
         id: 6,
-        question: 'How can i buy green coffee?',
+        question: 'Where is your coffee stored?',
         answer: 'Our coffee is stored at nensebo warehouse in Oromia, west arsi. They are a HACCP certified food storage facility that offers both dry ambient and cold storage'
     },
     {
         id: 7,
-        question: 'Payement Terms',
+        question: 'What are your payment terms?',
         answer: 'For first-time customers, our terms are ‘payment in advance’ of delivery. We are glad to extend terms on credit after an order history & relationship have been established.'
     },
     {
         id: 8,
         question: 'What’s the minimum order quantity (MOQ) for exports?',
-        answer: 'Our MOQ is [quantity, { e.g., 10 bags/1 ton }], but we can discuss smaller shipments for new partnerships.'
+        answer: 'Our minimum order quantity depends on the lot — contact us to discuss shipment sizes; we can also arrange smaller shipments for new partnerships.'
     },
 ]
 
