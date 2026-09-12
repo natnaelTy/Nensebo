@@ -1,8 +1,8 @@
-import HomePage from "./homepage/page";
-import WhatWeOffer from "./WhatWeOffer/page";
-import ShortAbout from "./shortAbout/page";
-import WhyChooseUs from "./whychooseus/page";
-import OurSites from "./oursite/page";
+import HomePage from "./homepage/Hero";
+import WhatWeOffer from "./WhatWeOffer/WhatWeOffer";
+import ShortAbout from "./shortAbout/ShortAbout";
+import WhyChooseUs from "./whychooseus/WhyChooseUs";
+import OurSites from "./oursite/OurSitesPreview";
 import "./globals.css";
 
 export default function Home() {
