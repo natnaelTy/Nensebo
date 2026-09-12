@@ -60,7 +60,7 @@ const highlights = [
   {
     icon: "📦",
     title: "Export Ready",
-    desc: "Fully compliant with international export standards.",
+    desc: "Wholesale green coffee lots, compliant with international export standards.",
   },
 ];
 
@@ -127,10 +127,10 @@ export default function ShortAbout() {
             </h2>
             <p className="text-muted-foreground text-base lg:text-lg leading-relaxed mb-8">
               Nestled in the highlands of West Arsi in Oromia, Nensebo is where
-              exceptional coffee is born. We work directly with local farming
-              families to cultivate, process, and export some of Ethiopia&apos;s
-              most sought-after specialty coffees — with full traceability from
-              farm to roaster.
+              exceptional coffee is born. As an Ethiopian green coffee exporter,
+              we work directly with local farming families to cultivate, process,
+              and ship some of Ethiopia&apos;s most sought-after specialty coffee
+              beans — with full traceability from farm to roaster.
             </p>
 
             {/* Stats grid */}

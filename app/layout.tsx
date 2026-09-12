@@ -3,7 +3,12 @@ import { Source_Serif_4 } from "next/font/google";
 import "./globals.css";
 import NavBar from "./components/navbar/NavBar";
 import Footer from "./components/footer/Footer";
-import { SITE_URL, SITE_NAME, SITE_DESCRIPTION } from "@/lib/site";
+import {
+  SITE_URL,
+  SITE_NAME,
+  SITE_DESCRIPTION,
+  SITE_KEYWORDS,
+} from "@/lib/site";
 
 // Base image for OpenGraph/Twitter social previews
 const ogImage = {
@@ -16,21 +21,12 @@ const ogImage = {
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: `${SITE_NAME} — Specialty Coffee from Ethiopia`,
+    default: `${SITE_NAME} — Specialty Coffee Exporter from Ethiopia`,
     template: `%s | ${SITE_NAME}`,
   },
   description: SITE_DESCRIPTION,
   applicationName: SITE_NAME,
-  keywords: [
-    "Ethiopian coffee",
-    "specialty coffee",
-    "single origin coffee",
-    "West Arsi coffee",
-    "Oromia coffee",
-    "traceable coffee",
-    "farm to cup",
-    "Tade Coffee",
-  ],
+  keywords: SITE_KEYWORDS,
   authors: [{ name: SITE_NAME }],
   creator: SITE_NAME,
   openGraph: {
@@ -38,13 +34,13 @@ export const metadata: Metadata = {
     siteName: SITE_NAME,
     locale: "en_US",
     url: SITE_URL,
-    title: `${SITE_NAME} — Specialty Coffee from Ethiopia`,
+    title: `${SITE_NAME} — Specialty Coffee Exporter from Ethiopia`,
     description: SITE_DESCRIPTION,
     images: [ogImage],
   },
   twitter: {
     card: "summary_large_image",
-    title: `${SITE_NAME} — Specialty Coffee from Ethiopia`,
+    title: `${SITE_NAME} — Specialty Coffee Exporter from Ethiopia`,
     description: SITE_DESCRIPTION,
     images: [ogImage.url],
   },

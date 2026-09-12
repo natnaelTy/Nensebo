@@ -38,7 +38,7 @@ const reasons = [
       </svg>
     ),
     title: "Global Export",
-    desc: "Shipping to 12+ countries across Asia, Europe, and the Americas.",
+    desc: "Wholesale green coffee shipped to 12+ countries across Asia, Europe, and the Americas.",
   },
   {
     icon: (
@@ -103,8 +103,9 @@ export default function WhyChooseUs() {
             The Standard Behind Every Bag
           </h2>
           <p className="text-white/50 mt-4 max-w-xl mx-auto text-base">
-            From highland farm to export container — our commitment to quality,
-            traceability, and partnership is unwavering.
+            From highland farm to export container — wholesale green coffee lots
+            roasters can trust, with unwavering quality, traceability, and
+            partnership.
           </p>
         </motion.div>
 

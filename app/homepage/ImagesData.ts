@@ -17,7 +17,7 @@ const data: ImageDataType[] = [
         title: "Exceptional Coffee,",
         highlight: "Tade Origin",
         description:
-            "Single-origin specialty coffee from the highland farms of West Arsi — traceable from farm to cup, exported with pride.",
+            "Specialty green coffee from the highland farms of West Arsi — traceable from farm to cup, supplied to roasters worldwide.",
         alt: "Tade Coffee estate in the West Arsi highlands"
     },
     {
@@ -37,7 +37,7 @@ const data: ImageDataType[] = [
         title: "From Our Farms,",
         highlight: "To Your Cup",
         description:
-            "Fully washed, natural and anaerobic lots — hand-picked, carefully processed and exported with pride from Nensebo.",
+            "Washed, natural and anaerobic lots — hand-picked, carefully processed and shipped to specialty roasters in 12+ countries.",
         alt: "Freshly harvested Tade Coffee cherries"
     }
 ]

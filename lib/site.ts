@@ -11,7 +11,29 @@ export const SITE_URL = (
 export const SITE_NAME = "Tade Coffee";
 
 export const SITE_DESCRIPTION =
-  "Premium single-origin specialty coffee from the West Arsi highlands of Oromia, Ethiopia — traceable from farm to cup.";
+  "Ethiopian specialty coffee exporter of premium single-origin green coffee beans from the West Arsi highlands, Oromia — traceable from farm to cup.";
+
+/**
+ * Baseline keyword set — used by the root metadata and composed into
+ * page-specific keyword lists. Commercial-intent terms (exporter, green
+ * coffee beans, wholesale) target B2B buyers searching for suppliers.
+ */
+export const SITE_KEYWORDS = [
+  "Ethiopian coffee exporter",
+  "specialty green coffee beans",
+  "wholesale coffee beans",
+  "Ethiopian specialty coffee",
+  "single origin coffee",
+  "West Arsi coffee",
+  "Nensebo coffee",
+  "Oromia coffee",
+  "washed natural anaerobic coffee",
+  "traceable coffee",
+  "farm to cup",
+  "direct trade coffee",
+  "coffee supplier for roasters",
+  "Tade Coffee",
+];
 
 /**
  * IndexNow key. Public by design (IndexNow spec): it must match the file at

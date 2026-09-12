@@ -38,9 +38,9 @@ export default function Footer() {
               />
             </div>
             <p className="text-white/60 text-sm leading-relaxed max-w-sm mb-6">
-              Single-origin specialty coffee from the highland farms of the
-              Nensebo Woreda, West Arsi — cultivated with care, processed with
-              precision, and exported with pride.
+              Single-origin specialty green coffee from the highland farms of
+              the Nensebo Woreda, West Arsi — cultivated with care, processed
+              with precision, and shipped to roasters in 12+ countries.
             </p>
 
             <div className="flex gap-3">

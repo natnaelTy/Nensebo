@@ -1,7 +1,14 @@
 import type { Metadata } from "next";
+import { SITE_KEYWORDS } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Gallery — Our Coffee Sites & Process",
+  keywords: [
+    ...SITE_KEYWORDS,
+    "Ethiopian coffee farm photos",
+    "coffee processing station",
+    "coffee drying beds",
+  ],
   description:
     "A visual journey through Tade Coffee's washing stations, drying beds and highland landscapes in West Arsi, Oromia, Ethiopia.",
   alternates: { canonical: "/gallary" },
