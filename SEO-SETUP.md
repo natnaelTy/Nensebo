@@ -8,6 +8,7 @@ the one-time dashboard steps you must do externally to "connect" the services.
 | Requirement | Status | File |
 |---|---|---|
 | Meta title & description | ✅ Root + per page | `app/layout.tsx`, `app/(allroutes)/*/layout.tsx` |
+| Blog (fresh content for SEO) | ✅ Listing + articles with Article JSON-LD | `app/(allroutes)/blog/` |
 | Sitemap | ✅ Auto-generated at `/sitemap.xml` | `app/sitemap.ts` |
 | Robots.txt | ✅ Auto-generated at `/robots.txt` | `app/robots.ts` |
 | IndexNow | ✅ Key file, API route, ping script | `public/<key>.txt`, `app/api/indexnow/route.ts`, `scripts/ping-indexnow.mjs` |
@@ -78,7 +79,21 @@ Yandex, Seznam and Naver simultaneously.
 > IndexNow has no dashboard — success is an HTTP 200/202 from the endpoint.
 > Engines crawl your pages at their own pace afterwards (usually within days).
 
-## 5. Environment variables summary
+## 5. Blog
+
+The blog lives in `app/(allroutes)/blog/`:
+- Listing page at `/blog` (server-rendered, fully crawlable)
+- Articles at `/blog/[slug]`, statically generated with per-post metadata,
+  canonical URLs, OpenGraph `article` tags and `Article` JSON-LD schema
+- All posts are auto-included in `sitemap.xml`
+
+**To publish a new post:** append an object to the `posts` array in
+`app/(allroutes)/blog/data.ts` (title, excerpt, date, tags, image, content
+blocks) and deploy — routing, metadata, JSON-LD and the sitemap update
+automatically. New posts are great candidates for an IndexNow ping:
+`npm run ping:indexnow /blog/new-post-slug`.
+
+## 6. Environment variables summary
 
 | Variable | Purpose |
 |---|---|
@@ -87,7 +102,7 @@ Yandex, Seznam and Naver simultaneously.
 | `BING_SITE_VERIFICATION` | Bing meta-tag verification |
 | `INDEXNOW_KEY` | IndexNow key (matches `public/<key>.txt`) |
 
-## 6. Duplicate routes — resolved
+## 7. Duplicate routes — resolved
 
 Section components (`/homepage`, `/shortAbout`, `/oursite`, `/whychooseus`,
 `/WhatWeOffer`, `/components/footer`) used to be `page.tsx` files, creating
