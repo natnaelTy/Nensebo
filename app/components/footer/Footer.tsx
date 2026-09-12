@@ -5,6 +5,7 @@ const footerLinks = {
   company: [
     { label: "About Us", href: "/about" },
     { label: "Our Sites", href: "/oursites" },
+    { label: "Blog", href: "/blog" },
     { label: "Gallery", href: "/gallary" },
     { label: "FAQ", href: "/FAQ" },
     { label: "Contact", href: "/contact" },
@@ -29,7 +30,7 @@ export default function Footer() {
           <div className="lg:col-span-2">
             <div className="flex items-center gap-3 mb-5">
               <Image
-                src="/images/tadecoffeelogo-no-bg.png"
+                src="/favicon.png"
                 alt="Tade Coffee"
                 width={192}
                 height={192}
